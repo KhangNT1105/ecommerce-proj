@@ -1,0 +1,68 @@
+.productList .productList__wrapper {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.slick-arrow {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #e5e5e5;
+  z-index: 1;
+  transition: all 0.5s ease;
+  color: #333333;
+}
+.slick-arrow {
+  top: -50px;
+}
+.slick-prev {
+  left: auto;
+  right: 45px;
+}
+.slick-next {
+  right: 0;
+}
+.slick-prev:before {
+  content: "ᐸ";
+}
+.slick-next:before {
+  content: "ᐳ";
+}
+.slick-arrow:before {
+  color: #333333;
+  background-color: transparent;
+}
+.productList__title {
+  padding-bottom: 1rem;
+}
+.productList__carousel {
+  padding-top: 5rem;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.productList__carousel .carousel .carousel__item .carousel__item__img {
+  border: solid 1px #eeeeee;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productList__carousel .carousel .carousel__item .carousel__item__img img {
+  max-width: 188px;
+  transition: 0.5s;
+}
+
+.productList__carousel .carousel .carousel__item {
+  text-align: center;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.productList__carousel .carousel .carousel__item:hover img {
+  transform: scale(1.08);
+}
+.productList__sub {
+  padding-top: 1.5rem;
+}
