@@ -18,11 +18,10 @@
 <body>
     <div class="container">
         <div class="signUp__title">
-            <h1 class= "bold">Create an account</h1>
+            <h1 class= "bold">Tạo tài khoản</h1>
             
-            <h4 class="bold">STARBUCKS® REWARDS</h4>
-            <p>Join Starbucks Rewards to earn Stars for free food and drinks, any way you pay. 
-            Get access to mobile ordering, a birthday Reward, and <a href="#">more</a>.</p>
+            <h4 class="bold">Ưu đãi</h4>
+            <p>Quý khách sẽ được tích điểm, điểm sẽ được quy ra mã giảm giá và <a href="#">chi tiết...</a>.</p>
         </div>
 
         <div class="signUp">
@@ -53,34 +52,34 @@
                     <span class="errorMess"></span>
                 </div>
 
-                <h4>Already have a Starbucks gift card?</h4>
-                <p class="left">Add your gift card to earn Stars when you pay and order ahead.</p>
+                <h4>Đã có mã giám giá</h4>
+                <p class="left">Điền vào mã giảm giá mà bạn có.</p>
                 <div class="formGroup">
                     <input type="text" name="CardNumber" id="CardNumber" placeholder=" "> 
-                    <label for="CardNumber" class="form__label">Card number</label>
+                    <label for="CardNumber" class="form__label">Số thẻ</label>
                     <span class="errorMess"></span>
                 </div>
 
                 <div class="formGroup">
                     <input type="text" name="SecurityCode" id="SecurityCode" placeholder=" "> 
-                    <label for="SecurityCode" class="form__label">Security code</label>
+                    <label for="SecurityCode" class="form__label">ID thẻ</label>
                     <span class="errorMess"></span>
                 </div>
 
-                <h4>COLLECT MORE STARS & EARN REWARDS</h4>
-                <p class="left">Email is a great way to know about offers and what’s new from Starbucks.</p>
+                <h4>Để nhận thêm nhiều phần quà hấp dẫn khác</h4>
+                <p class="left">Email là nơi mà chúng tôi sẽ gửi thông báo cho bạn.</p>
                 <div class="options">
                     <div class="options__savePass">
                         <input type="checkbox" name="yesIlike" id="yesIlike">
-                        <label for="yesIlike">Yes, I’d like email from Starbucks</label>
+                        <label for="yesIlike">Vâng, tôi sẽ nhận thông báo qua email.</label>
                     </div>
-                    <a href="#" class="bold">Know about initiatives, announcements and product offers.</a>
+                    <a href="#" class="bold">Biết thêm những chính sách khác của chúng tôi.</a>
                 </div>
-                <h4>TERMS OF USE</h4>
+                <h4>Điều khoản sử dụng</h4>
                 <div class="formGroup left" id="spec">
                     <input type="checkbox" name="agree" id="agree">
                     <label for="agree">
-                        <span class="specSpan">I agree to the <a href="#"> Starbucks® Rewards Terms</a> and the <a href="#">Starbucks Card Terms</a>
+                        <span class="specSpan"> Tôi sẽ đồng ý với <a href="#">điều khoản này</a>
                         </span>
                     </label>
                     <span class="errorMess"></span>
@@ -102,7 +101,7 @@
             validator.isRequired('#Ten', 'Vui lòng nhập Tên'),
             validator.isRequired('#email', 'Vui lòng nhập email'),
             validator.isRequired('#password', 'Vui lòng nhập password'),
-            validator.isRequired('#agree','Vui lòng đồng ý điều kiện của chúng tôi'),
+            validator.isRequired('#agree','Vui lòng đồng ý điều khoản của chúng tôi'),
             
             
             
