@@ -161,3 +161,29 @@ iconHiddenMenuSubcommunities.addEventListener('click', showSubMenuHiddenSubcomun
 
 
 
+/* menu order */
+const listSizes = document.querySelectorAll('.contentbox__size--item')
+const extPrice = document.getElementById('ext__price')
+  var liS = document.querySelector('.li1');
+  var liM = document.querySelector('.li2');
+  var liL = document.querySelector('.li3');
+  liS.onclick = function () {
+    liS.classList.toggle('current')
+    extPrice.innerHTML='49,000 VND'
+    liM.classList.remove('current')
+    liL.classList.remove('current')
+}
+  liM.onclick = function () {
+    liM.classList.toggle('current')
+    extPrice.innerHTML='59,000 VND'
+    liS.classList.remove('current')
+    liL.classList.remove('current')
+
+}
+  liL.onclick = function () {
+    liL.classList.toggle('current')
+    extPrice.innerHTML='69,000 VND'
+    liS.classList.remove('current')
+    liM.classList.remove('current')
+}
+  
