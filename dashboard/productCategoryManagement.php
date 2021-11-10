@@ -278,10 +278,10 @@
             </ul>
           </li>
           <li class="sub-menu">
-            <a class="active" href="javascript:;">
+            <!-- <a class="active" href="javascript:;">
               <i class="fa fa-book"></i>
               <span>Extra Pages</span>
-              </a>
+              </a> -->
             <ul class="sub">
               <li class="active"><a href="blank.html">Blank Page</a></li>
               <li><a href="login.html">Login</a></li>
@@ -324,6 +324,19 @@
               <span class="label label-theme pull-right mail-info">2</span>
               </a>
           </li>
+          <li>
+            <a class="active" href="javascript:;">
+              <i class="fa fa-th"></i>
+              <span>Quản lí danh mục sản phẩm</span>
+              </a>
+          </li>
+
+           <li>
+            <a href="productManagement.php">
+              <i class="fa fa-th"></i>
+              <span>Quản lí sản phẩm </span>
+              </a>
+          </li>
           <li class="sub-menu">
             <a href="javascript:;">
               <i class=" fa fa-bar-chart-o"></i>
@@ -363,10 +376,20 @@
     <!--main content start-->
     <section id="main-content">
       <section class="wrapper site-min-height">
-        <h3><i class="fa fa-angle-right"></i> Blank Page</h3>
+        <h3 style="font-weight:bold"><i class="fa fa-angle-right"></i> Quản lí danh mục sản phẩm</h3>
+
+
+
+
         <div class="row mt">
           <div class="col-lg-12">
-            <p>Place your content here.</p>
+            <!-- Content here -->
+            <?php
+              include './productCategory-Show.php'
+            ?>
+
+            <!-- content here -->
+
           </div>
         </div>
       </section>
@@ -375,25 +398,25 @@
     <!-- /MAIN CONTENT -->
     <!--main content end-->
     <!--footer start-->
-    <footer class="site-footer">
+    <!-- <footer class="site-footer">
       <div class="text-center">
         <p>
           &copy; Copyrights <strong>Dashio</strong>. All Rights Reserved
         </p>
-        <div class="credits">
+        <div class="credits"> -->
           <!--
             You are NOT allowed to delete the credit link to TemplateMag with free version.
             You can delete the credit link only if you bought the pro version.
             Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
             Licensing information: https://templatemag.com/license/
           -->
-          Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>
+          <!-- Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>
         </div>
         <a href="blank.html#" class="go-top">
           <i class="fa fa-angle-up"></i>
           </a>
       </div>
-    </footer>
+    </footer> -->
     <!--footer end-->
   </section>
   <!-- js placed at the end of the document so the pages load faster -->
