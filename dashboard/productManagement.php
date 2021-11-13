@@ -337,17 +337,11 @@
               <span>Quản lí sản phẩm</span>
               </a>
           </li>
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class=" fa fa-bar-chart-o"></i>
-              <span>Charts</span>
+          <li>
+              <a  href="productNews-Show.php">
+              <i class="fa fa-th"></i>
+              <span>Tin tức</span>
               </a>
-            <ul class="sub">
-              <li><a href="morris.html">Morris</a></li>
-              <li><a href="chartjs.html">Chartjs</a></li>
-              <li><a href="flot_chart.html">Flot Charts</a></li>
-              <li><a href="xchart.html">xChart</a></li>
-            </ul>
           </li>
           <li class="sub-menu">
             <a href="javascript:;">
