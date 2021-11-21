@@ -1,0 +1,56 @@
+#footer {
+  background: #53382c;
+  padding: 18px 0;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer__icon {
+  margin-right: 20px;
+}
+.footer__icon a i {
+  color: #b22830;
+  padding: 8px;
+  background-color: #fff;
+}
+.footer__icon a i:hover {
+  transform: translateY(6%);
+  transition: transform 1s ease;
+}
+.footer__content span {
+  font-size: 13px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-right: 25px;
+}
+.footer__contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__contact--news i,
+.footer__contact--news a span {
+  font-size: 13px;
+  line-height: 21px;
+  margin-left: 4px;
+  color: #ffffff;
+}
+.footer__contact--news a:hover i,
+.footer__contact--news a:hover span {
+  color: #f2bc79;
+}
+.footer__contact--mail {
+  margin-left: 20px;
+}
+.footer__contact--mail a {
+  font-size: 13px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.footer__contact--mail a i {
+  margin-right: 4px;
+}
+.footer__contact--mail a:hover {
+  color: #f2bc79;
+}

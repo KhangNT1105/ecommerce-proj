@@ -13,6 +13,9 @@
 </head>
 
 <body>
+<?php
+     include './header.php'
+            ?>
     <div class="about bg1">
         <div class="img">
             <a href="https://www.highlandscoffee.com.vn/vn/khoi-nguon.html">
@@ -104,7 +107,9 @@
             </div>
         </div>
     </div>
-
+    <?php
+     include './footer.php'
+            ?>
     <!-- Boostrap -->
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"

@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-  <title>Highlands Coffee</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/png" href="./home-image/img/1200px-Highlands_Coffee_logo.svg.png" />
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
   <!-- Font-family -->
@@ -30,10 +20,199 @@
   <!-- Animation -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Link-css  -->
-  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/header.css" />
 </head>
-
-<body>
+<!-- modal -->
+<div class="model js-model">
+    <div class="model-container js-model-container">
+      <div class="model-close js-model-close">
+        <i class="far fa-window-close"></i>
+      </div>
+      <header class="model-header">
+        <img src="./home-image/img/bg-popup.png" alt="">
+      </header>
+      <div class="model-body">
+        <div class="model-body__tilte">
+          Đăng kí để nhận bản tin
+        </div>
+        <div class="formpopup">
+          <div class="formgroup">
+            <label for="">Tên</label>
+            <input type="text">
+          </div>
+          <div class="formgroup">
+            <label for="">Họ</label>
+            <input type="text">
+          </div>
+          <div class="formgroup">
+            <label for="">Email</label>
+            <input type="email">
+          </div>
+          <div class="formgroup">
+            <div class="formgroup-text">Chúng tôi cam kết bảo mật thông tin của quý khách hàng</div>
+          </div>
+          <div class="formgroup">
+            <label for=""></label>
+            <button type="submit">GỬI</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal menu hidden -->
+  <div class="menu-hidden-container js-modal-menu animate__animated animate__fadeInRight">
+    <div class="menu-hidden-container-icon js-close-menu-hidden  ">
+      <i class="far fa-times-circle"></i>
+    </div>
+    <div class="menu-hidden__content">
+      <ul class="menu-hidden__content--list">
+        <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
+          <a class="menu-hidden__content--item-signin" href="">ĐĂNG NHẬP</a>
+          <i class="far fa-user"></i>
+        </li>
+        <li class="menu-hidden__content--item animate__animated animate__fadeInRight"><a class="" href="">QUÁN CÀ
+            PHÊ</a></li>
+        <li class="menu-hidden__content--item animate__animated animate__fadeInRight ">
+          <a href="">THỰC ĐƠN</a>
+          <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon  "></i>
+        </li>
+        <ul class="menu-hidden__content--list submenu-hidden__list">
+          <li class="menu-hidden__content--item  submenu-hidden__item">
+            <a class="" href="">CÀ PHÊ</a>
+            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-coffee  "></i>
+          </li>
+          <ul class="menu-hidden__content--list submenu submenu-hidden__list--coffee">
+            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Cà Phê Phin</a>
+            </li>
+            <li class="menu-hidden__content--item  submenu-hidden__item ">
+              <a href="">PhinDi</a>
+            </li>
+            <li class="menu-hidden__content--item  submenu-hidden__item">
+              <a href="">Cà Phê Expresso</a>
+            </li>
+          </ul>
+          <li class="menu-hidden__content--item  submenu-hidden__item ">
+            <a href="">FREEZE</a>
+            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-freeze "></i>
+          </li>
+          <ul class="menu-hidden__content--list submenu submenu-hidden__list--freeze">
+            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Cà Phê Phin</a>
+            </li>
+            <li class="menu-hidden__content--item  submenu-hidden__item ">
+              <a href="">PhinDi</a>
+            </li>
+          </ul>
+          <li class="menu-hidden__content--item  submenu-hidden__item">
+            <a href="">TRÀ</a>
+            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-tea "></i>
+          </li>
+          <ul class="menu-hidden__content--list submenu submenu-hidden__list--tea">
+            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Trà Sen Vàng</a>
+            </li>
+            <li class="menu-hidden__content--item  submenu-hidden__item ">
+              <a href="">Trà Thạch Đào</a>
+            </li>
+            <li class="menu-hidden__content--item  submenu-hidden__item ">
+              <a href="">Trà Thanh Đào</a>
+            </li>
+            <li class="menu-hidden__content--item  submenu-hidden__item ">
+              <a href="">Trà Thạch Vải </a>
+            </li>
+          </ul>
+          <li class="menu-hidden__content--item  submenu-hidden__item">
+            <a href="">BÁNH MÌ</a>
+            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-bakery"></i>
+          </li>
+          <ul class="menu-hidden__content--list submenu submenu-hidden__list--bakery">
+            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Thịt Nướng</a>
+            </li>
+            <li class="menu-hidden__content--item  submenu-hidden__item ">
+              <a href="">Xíu Mại</a>
+            </li>
+            <li class="menu-hidden__content--item  submenu-hidden__item ">
+              <a href="">Chả Lụa Xá Xíu</a>
+            </li>
+            <li class="menu-hidden__content--item  submenu-hidden__item ">
+              <a href="">Gà Xé Nước Tương</a>
+            </li>
+          </ul>
+          <li class="menu-hidden__content--item submenu  submenu-hidden__item">
+            <a href="">KHÁC</a>
+            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-order"></i>
+          </li>
+          <ul class="menu-hidden__content--list submenu submenu-hidden__list--order">
+            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Bánh Ngọt</a>
+            </li>
+            <li class="menu-hidden__content--item  submenu-hidden__item ">
+              <a href="">Merchandise</a>
+            </li>
+            <li class="menu-hidden__content--item  submenu-hidden__item ">
+              <a href="">Cà Phê Đóng Gói</a>
+            </li>
+            <li class="menu-hidden__content--item  submenu-hidden__item ">
+              <a href="">Thực Đơn Giao Hàng</a>
+            </li>
+          </ul>
+        </ul>
+        <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
+          <a href="">TIN TỨC</a>
+          <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-news"></i>
+        </li>
+        <ul class="menu-hidden__content--list submenu-hidden__list--news">
+          <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Tin Tức Và Sự Kiện</a>
+          </li>
+          <li class="menu-hidden__content--item  submenu-hidden__item ">
+            <a href="">Tin Khuyến Mãi</a>
+          </li>
+        </ul>
+        <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
+          <a href="">TRÁCH NHIỆM CỘNG ĐỒNG </a>
+          <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-community "></i>
+        </li>
+        <ul class="menu-hidden__content--list submenu-hidden__list-community">
+          <li class="menu-hidden__content--item  submenu-hidden__item">
+            <a class="" href="">Giá trị văn hóa việt</a>
+            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-cultural  "></i>
+          </li>
+          <ul class="menu-hidden__content--list submenu-hidden__list--cultural">
+            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Đại cương hóa tranh đông
+                hồ</a>
+            </li>
+          </ul>
+          <li class="menu-hidden__content--item  submenu-hidden__item ">
+            <a href="">Cộng đồng</a>
+            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-communities "></i>
+          </li>
+          <ul class="menu-hidden__content--list submenu-hidden__list--communities">
+            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Lớp học cho em </a>
+            </li>
+          </ul>
+        </ul>
+        <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
+          <a href="">VỀ CHÚNG TÔI</a>
+          <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-gobackme"></i>
+        </li>
+        <ul class="menu-hidden__content--list submenu-hidden__list--gobackme">
+          <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">KHỞI NGUỒN</a>
+          </li>
+          <li class="menu-hidden__content--item  submenu-hidden__item ">
+            <a href="">DỊCH VỤ KHÁCH HÀNG</a>
+          </li>
+          <li class="menu-hidden__content--item  submenu-hidden__item ">
+            <a href="">NGHỀ NGHIỆP</a>
+          </li>
+        </ul>
+        <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
+          <form class="header-search d-flex">
+            <input class="header-search-input" type="search" placeholder="Từ khóa" />
+            <button class="btn btn-outline-success header-search-btn" type="submit">
+              Search
+            </button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
   <!-- Header -->
   <header id="header">
     <div class="container wapper-header">
@@ -527,443 +706,8 @@
         </div>
       </div>
     </div>
+    
   </header>
-  <!-- Main -->
-  <main>
-    <div class="slick-slider">
-      <a class="single-item-img" href="">
-        <img src="./home-image/img/HCO_7654_MOONCAKE_2021_KV_BANNER_1440X460.jpg" alt="" />
-      </a>
-      <a href="" class="single-item-img">
-        <img src="./home-image/img/HCO-7605-FESTIVE-2020-WEB-FB-2000X639_1.png" alt="" />
-      </a>
-      <a href="" class="single-item-img">
-        <img src="./home-image/img/web_1.png" alt="" />
-      </a>
-    </div>
-    <div class="banner-home">
-      <div class="banner-home-img">
-        <a href="" class="banner-home__link">
-          <img class="banner-home__link--img" src="./home-image/img/HCO-7548-PHIN-SUA-DA-2019-TALENT-WEB_1.jpg" alt="">
-          <div class="banner-home-caption">
-            <div class="banner-home-caption__wrapper">
-              <div class="banner-home-caption__linklazy">
-                <a href="" class="banner-home-capton__link animate__animated animate__fadeInUp"> <span>Khám phá
-                    thêm</span> </a>
-              </div>
-            </div>
-        </a>
-      </div>
-    </div>
-    </div>
-    <div class="banner-home">
-      <div class="banner-home-img">
-        <a href="" class="banner-home__link">
-          <img class="banner-home__link--img" src="./home-image/img/web_1.png" alt="">
-          <div class="banner-home-caption">
-            <div class="banner-home-caption__wrapper banner-home-caption__wrapper-left">
-              <div class="banner-home-caption__linklazy">
-                <a href="" class="banner-home-capton__link animate__animated animate__fadeInUp"> <span>Khám phá
-                    thêm</span> </a>
-              </div>
-            </div>
-        </a>
-      </div>
-    </div>
-    </div>
-    <div class="banner-home">
-      <div class="banner-home-img">
-        <a href="" class="banner-home__link">
-          <img class="banner-home__link--img" src="./home-image/img/HCO-7605-FESTIVE-2020-WEB-FB-2000X639_1.png" alt="">
-          <div class="banner-home-caption">
-            <div class="banner-home-caption__wrapper">
-              <div class="banner-home-caption__linklazy">
-                <a href="" class="banner-home-capton__link banner-home-capton__link-textgreen "> <span>Khám phá
-                    thêm</span> </a>
-              </div>
-            </div>
-        </a>
-      </div>
-    </div>
-    </div>
-    <div class="mainbottom">
-      <div class="container-fluid">
-        <div class="col-left">
-          <div class="wrap fr">
-            <div class="boxhome">
-              <div class="boxhome__tille">
-                <h2>QUÁN MỚI</h2>
-              </div>
-              <div class="boxhome__content">
-                <div class="boxhome__tille--slick">
-                  <div class="boxhome__tille--slick-slider">
-                    <div class="boxhome__tille--slick-slider-item">
-                      <ul>
-                        <li><a href="">721 Huỳnh tấn phát</a></li>
-                        <li><a href="">721 huỳnh tấn phát,phường phú nhuận, quận 7, thành phố hồ chí minh</a></li>
-                        <li><a href="">TÌM ĐƯỜNG
-                            <i class="fas fa-chevron-right"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="boxhome__tille--slick-slider-item">
-                      <ul>
-                        <li><a href="">Hàm cá mập</a></li>
-                        <li><a href="">Tầng 3,1-3-5 Đinh tiên hoàng,Phường hoàng trống , quận hoàng kiếm, hà nội</a>
-                        </li>
-                        <li><a href="">TÌM ĐƯỜNG
-                            <i class="fas fa-chevron-right"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="boxhome__tille--slick-slider-item">
-                      <ul>
-                        <li><a href="">Sân bay quốc tế đà nẵng</a></li>
-                        <li><a href="">Khu vực check-in ga quốc tế,sân bay đà nẳng,62 trần quốc toản,quận hải châu ,
-                            TP.Đà nẵng</a></li>
-                        <li><a href="">TÌM ĐƯỜNG
-                            <i class="fas fa-chevron-right"></i></li>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-right">
-          <div class="wrap fr">
-            <div class="boxhome">
-              <div class="boxhome__tille news-branch
-                ">
-                <h3 class="boxhome__tille-right-new">TIN MỚI NHẤT</h3>
-                <a class="boxhome__tille-right-link" href="">
-                  <span>Xem Toàn Bộ</span>
-                  <i class="fas fa-chevron-circle-right"></i>
-                </a>
-              </div>
-              <div class="boxhome__content">
-                <div class="boxhome__content-container">
-                  <a class="boxhome__content-container__link" href="">
-                    <img src="./home-image/img/HC_7654_MOONCAKE_2021_KV_1920X1080.jpg">
-                  </a>
-                  <div class="boxhome__content-container--heading">
-                    <a class="boxhome__content-container--heading-link" href="">
-                      BÁNH TRUNG THU HIGHLANDS COFFEE <span class="boxhome__content-container--heading--mobile"> - Sẻ
-                        chia tinh túy Đất Việt</span>
-                    </a>
-                    <div class="boxhome__content-container--heading-date">
-                      <i class="far fa-calendar"></i>
-                      <span>04/08/2021</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="boxhome__content-container">
-                  <a class="boxhome__content-container__link" href="">
-                    <img src="./home-image/img/470_crop_Highlands_-_Freeze_Tra_Xanh_-_KV_Phase_1_470x312.png">
-                  </a>
-                  <div class="boxhome__content-container--heading">
-                    <a class="boxhome__content-container--heading-link" href="">
-                      HIGHLANDS COFFEE - DỊCH VỤ <span class="boxhome__content-container--heading--mobile"> GIAO HÀNG
-                        MIỄN PHÍ</span>
-                    </a>
-                    <div class="boxhome__content-container--heading-date">
-                      <i class="far fa-calendar"></i>
-                      <span>29/03/2020</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="boxhome__content-container">
-                  <a class="boxhome__content-container__link" href="">
-                    <img src="./home-image/img/tra-sen-vang-moi.png">
-                  </a>
-                  <div class="boxhome__content-container--heading">
-                    <a class="boxhome__content-container--heading-link" href="">
-                      UỐNG TRÀ SEN VÀNG MỚI - NHẬN <span class="boxhome__content-container--heading--mobile">VÔ VÀN ƯU
-                        ĐÃI SEN VÀNG</span>
-                    </a>
-                    <div class="boxhome__content-container--heading-date">
-                      <i class="far fa-calendar"></i>
-                      <span>04/12/2019</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="boxhome__bottom">
-                <form action="" class="boxhome__bottom--form-control">
-                  <input type="email" placeholder="Nhập email của bạn để nhận thông tin... ">
-                  <button type="submit">
-                    <i class="far fa-paper-plane"></i>
-                    <span> Gửi </span>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <!-- Footer -->
-  <footer id="footer">
-    <div class="container footer-container">
-      <div class="footer__icon">
-        <a href=""><i class="fab fa-facebook"></i></a>
-        <a href=""><i class="fab fa-youtube"></i></a>
-        <a href=""><i class="fab fa-instagram-square"></i></a>
-      </div>
-      <div class="footer__content">
-        <span>© 2018 Highlands Coffee. All rights reserved</span>
-      </div>
-      <div class="footer__contact">
-        <div class="footer__contact--news">
-          <a href="javascript:;" id="js-receive-news">
-            <i class="far fa-paper-plane"></i>
-            <span>Đăng kí để nhận bản tin</span>
-          </a>
-        </div>
-        <div class="footer__contact--mail">
-          <a href="">
-            <i class="fas fa-envelope-square"></i>
-            customerservice@highlandscoffee.com.vn
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- footer container tablet -->
-    <div class="container footer-container-mobile">
-
-      <div class="view-map">
-        <button class="view-map__btn" type="submit">
-          <a href="">
-            <i class="fas fa-map-marker-alt"></i>
-            VIEW MAP
-          </a>
-
-        </button>
-      </div>
-      <div class="footer__icon">
-        <a href=""><i class="fab fa-facebook"></i></a>
-        <a href=""><i class="fab fa-youtube"></i></a>
-        <a href=""><i class="fab fa-instagram-square"></i></a>
-      </div>
-      <div class="footer__content">
-        <span>© 2018 Highlands Coffee. All rights reserved</span>
-      </div>
-      <div class="footer__contact">
-        <div class="footer__contact--news">
-          <a href="javascript:;" class="js-receive-news-mobile">
-            <i class="far fa-paper-plane"></i>
-            <span>Đăng kí để nhận bản tin</span>
-          </a>
-        </div>
-        <div class="footer__contact--mail">
-          <a href="">
-            <i class="fas fa-envelope-square"></i>
-            customerservice@highlandscoffee.com.vn
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- modal -->
-  <div class="model js-model">
-    <div class="model-container js-model-container">
-      <div class="model-close js-model-close">
-        <i class="far fa-window-close"></i>
-      </div>
-      <header class="model-header">
-        <img src="./home-image/img/bg-popup.png" alt="">
-      </header>
-      <div class="model-body">
-        <div class="model-body__tilte">
-          Đăng kí để nhận bản tin
-        </div>
-        <div class="formpopup">
-          <div class="formgroup">
-            <label for="">Tên</label>
-            <input type="text">
-          </div>
-          <div class="formgroup">
-            <label for="">Họ</label>
-            <input type="text">
-          </div>
-          <div class="formgroup">
-            <label for="">Email</label>
-            <input type="email">
-          </div>
-          <div class="formgroup">
-            <div class="formgroup-text">Chúng tôi cam kết bảo mật thông tin của quý khách hàng</div>
-          </div>
-          <div class="formgroup">
-            <label for=""></label>
-            <button type="submit">GỬI</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- modal menu hidden -->
-  <div class="menu-hidden-container js-modal-menu animate__animated animate__fadeInRight">
-    <div class="menu-hidden-container-icon js-close-menu-hidden  ">
-      <i class="far fa-times-circle"></i>
-    </div>
-    <div class="menu-hidden__content">
-      <ul class="menu-hidden__content--list">
-        <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
-          <a class="menu-hidden__content--item-signin" href="">ĐĂNG NHẬP</a>
-          <i class="far fa-user"></i>
-        </li>
-        <li class="menu-hidden__content--item animate__animated animate__fadeInRight"><a class="" href="">QUÁN CÀ
-            PHÊ</a></li>
-        <li class="menu-hidden__content--item animate__animated animate__fadeInRight ">
-          <a href="">THỰC ĐƠN</a>
-          <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon  "></i>
-        </li>
-        <ul class="menu-hidden__content--list submenu-hidden__list">
-          <li class="menu-hidden__content--item  submenu-hidden__item">
-            <a class="" href="">CÀ PHÊ</a>
-            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-coffee  "></i>
-          </li>
-          <ul class="menu-hidden__content--list submenu submenu-hidden__list--coffee">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Cà Phê Phin</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">PhinDi</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item">
-              <a href="">Cà Phê Expresso</a>
-            </li>
-          </ul>
-          <li class="menu-hidden__content--item  submenu-hidden__item ">
-            <a href="">FREEZE</a>
-            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-freeze "></i>
-          </li>
-          <ul class="menu-hidden__content--list submenu submenu-hidden__list--freeze">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Cà Phê Phin</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">PhinDi</a>
-            </li>
-          </ul>
-          <li class="menu-hidden__content--item  submenu-hidden__item">
-            <a href="">TRÀ</a>
-            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-tea "></i>
-          </li>
-          <ul class="menu-hidden__content--list submenu submenu-hidden__list--tea">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Trà Sen Vàng</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Trà Thạch Đào</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Trà Thanh Đào</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Trà Thạch Vải </a>
-            </li>
-          </ul>
-          <li class="menu-hidden__content--item  submenu-hidden__item">
-            <a href="">BÁNH MÌ</a>
-            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-bakery"></i>
-          </li>
-          <ul class="menu-hidden__content--list submenu submenu-hidden__list--bakery">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Thịt Nướng</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Xíu Mại</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Chả Lụa Xá Xíu</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Gà Xé Nước Tương</a>
-            </li>
-          </ul>
-          <li class="menu-hidden__content--item submenu  submenu-hidden__item">
-            <a href="">KHÁC</a>
-            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-order"></i>
-          </li>
-          <ul class="menu-hidden__content--list submenu submenu-hidden__list--order">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Bánh Ngọt</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Merchandise</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Cà Phê Đóng Gói</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Thực Đơn Giao Hàng</a>
-            </li>
-          </ul>
-        </ul>
-        <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
-          <a href="">TIN TỨC</a>
-          <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-news"></i>
-        </li>
-        <ul class="menu-hidden__content--list submenu-hidden__list--news">
-          <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Tin Tức Và Sự Kiện</a>
-          </li>
-          <li class="menu-hidden__content--item  submenu-hidden__item ">
-            <a href="">Tin Khuyến Mãi</a>
-          </li>
-        </ul>
-        <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
-          <a href="">TRÁCH NHIỆM CỘNG ĐỒNG </a>
-          <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-community "></i>
-        </li>
-        <ul class="menu-hidden__content--list submenu-hidden__list-community">
-          <li class="menu-hidden__content--item  submenu-hidden__item">
-            <a class="" href="">Giá trị văn hóa việt</a>
-            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-cultural  "></i>
-          </li>
-          <ul class="menu-hidden__content--list submenu-hidden__list--cultural">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Đại cương hóa tranh đông
-                hồ</a>
-            </li>
-          </ul>
-          <li class="menu-hidden__content--item  submenu-hidden__item ">
-            <a href="">Cộng đồng</a>
-            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-communities "></i>
-          </li>
-          <ul class="menu-hidden__content--list submenu-hidden__list--communities">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Lớp học cho em </a>
-            </li>
-          </ul>
-        </ul>
-        <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
-          <a href="">VỀ CHÚNG TÔI</a>
-          <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-gobackme"></i>
-        </li>
-        <ul class="menu-hidden__content--list submenu-hidden__list--gobackme">
-          <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">KHỞI NGUỒN</a>
-          </li>
-          <li class="menu-hidden__content--item  submenu-hidden__item ">
-            <a href="">DỊCH VỤ KHÁCH HÀNG</a>
-          </li>
-          <li class="menu-hidden__content--item  submenu-hidden__item ">
-            <a href="">NGHỀ NGHIỆP</a>
-          </li>
-        </ul>
-
-
-
-        <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
-          <form class="header-search d-flex">
-            <input class="header-search-input" type="search" placeholder="Từ khóa" />
-            <button class="btn btn-outline-success header-search-btn" type="submit">
-              Search
-            </button>
-          </form>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -976,8 +720,3 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
     crossorigin="anonymous"></script>
-  <!-- homejs -->
-  <script src="./js/home.js"></script>
-</body>
-
-</html>
