@@ -38,7 +38,7 @@
               include './header.php'
             ?>
   <!-- Main -->
-  <main>
+  <main class="homePage">
     <div class="slick-slider">
       <a class="single-item-img" href="">
         <img src="./home-image/img/HCO_7654_MOONCAKE_2021_KV_BANNER_1440X460.jpg" alt="" />
