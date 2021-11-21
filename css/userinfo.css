@@ -1,0 +1,79 @@
+.myorder {
+  background-color: #f5f5fa;
+  padding: 100px 0;
+}
+table {
+  background-color: #fff;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  width: 100%;
+  border-collapse: collapse;
+}
+table tr th {
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+}
+table tr {
+  border-bottom: 1px solid #ccc;
+}
+table tr td {
+  padding: 20px;
+}
+table tr:hover {
+  background-color: #bee9fe;
+}
+.myorder-text {
+  font-size: 19px;
+  line-height: 21px;
+  font-weight: 600;
+}
+/* user information */
+.form-control__info-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.form-control__info-user label {
+  width: 100px;
+  float: left;
+  font-weight: normal;
+  text-align: left;
+  margin: auto 0;
+}
+.form-control__info-user input {
+  overflow: hidden;
+  width: 60%;
+  height: 35px;
+  background: #ffffff;
+  border: 1px solid #b22830;
+  padding-left: 10px;
+  outline: none;
+}
+.form-control__info-user--gender {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.form-control__info-user--gender label {
+  padding: 0 20px 0 0;
+  margin: auto 0;
+}
+.form-control__info-user--gender input {
+  margin-left: 20px;
+}
+.form-control__info-user--gender span {
+  margin-left: 5px;
+}
+.datepicker select {
+  width: 100px;
+  border: 1px solid rgb(204, 204, 204);
+  height: 34px;
+  padding: 6px 12px;
+  line-height: 34px;
+  outline: none;
+  border-radius: 4px;
+  margin: 0px 12px 0px 0px;
+  background: 0px center;
+  box-shadow: none;
+}
+

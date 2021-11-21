@@ -1,3 +1,64 @@
+<?php
+$orderManagement = array(
+  1=> array(
+    "id" => 1,
+    "date_buy" => "6/10/2021",
+    "name_product_Category" => 'Cà phê phidi',
+    "size"=>"L",
+    "total_money" => "59.000đ",
+    "status" => "Thành công"
+  ),
+  2=> array(
+    "id" => 2,
+    "date_buy" => "6/10/2021",
+    "name_product_Category" => 'Cà phê phidi',
+    "size"=>"L",
+    "total_money" => "59.000đ",
+    "status" => "Thành công"
+  ),
+  3=> array(
+    "id" => 3,
+    "date_buy" => "6/10/2021",
+    "name_product_Category" => 'Cà phê phidi',
+    "size"=>"L",
+    "total_money" => "59.000đ",
+    "status" => "Thành công"
+  ),
+  4=> array(
+    "id" => 4,
+    "date_buy" => "6/10/2021",
+    "name_product_Category" => 'Cà phê phidi',
+    "size"=>"L",
+    "total_money" => "59.000đ",
+    "status" => "Thành công"
+  ),
+  5=> array(
+    "id" => 5,
+    "date_buy" => "6/10/2021",
+    "name_product_Category" => 'Cà phê phidi',
+    "size"=>"L",
+    "total_money" => "59.000đ",
+    "status" => "Thành công"
+  ),
+  6=> array(
+    "id" => 6,
+    "date_buy" => "6/10/2021",
+    "name_product_Category" => 'Cà phê phidi',
+    "size"=>"L",
+    "total_money" => "59.000đ",
+    "status" => "Thành công"
+  ),
+  7=> array(
+    "id" => 7,
+    "date_buy" => "6/10/2021",
+    "name_product_Category" => 'Cà phê phidi',
+    "size"=>"L",
+    "total_money" => "59.000đ",
+    "status" => "Thành công"
+  ),
+
+);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,6 +92,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Link-css  -->
   <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/userinfo.css">
 </head>
 
 <body>
@@ -530,180 +592,38 @@
   </header>
   <!-- Main -->
   <main>
-    <div class="slick-slider">
-      <a class="single-item-img" href="">
-        <img src="./home-image/img/HCO_7654_MOONCAKE_2021_KV_BANNER_1440X460.jpg" alt="" />
-      </a>
-      <a href="" class="single-item-img">
-        <img src="./home-image/img/HCO-7605-FESTIVE-2020-WEB-FB-2000X639_1.png" alt="" />
-      </a>
-      <a href="" class="single-item-img">
-        <img src="./home-image/img/web_1.png" alt="" />
-      </a>
-    </div>
-    <div class="banner-home">
-      <div class="banner-home-img">
-        <a href="" class="banner-home__link">
-          <img class="banner-home__link--img" src="./home-image/img/HCO-7548-PHIN-SUA-DA-2019-TALENT-WEB_1.jpg" alt="">
-          <div class="banner-home-caption">
-            <div class="banner-home-caption__wrapper">
-              <div class="banner-home-caption__linklazy">
-                <a href="" class="banner-home-capton__link animate__animated animate__fadeInUp"> <span>Khám phá
-                    thêm</span> </a>
-              </div>
-            </div>
-        </a>
-      </div>
-    </div>
-    </div>
-    <div class="banner-home">
-      <div class="banner-home-img">
-        <a href="" class="banner-home__link">
-          <img class="banner-home__link--img" src="./home-image/img/web_1.png" alt="">
-          <div class="banner-home-caption">
-            <div class="banner-home-caption__wrapper banner-home-caption__wrapper-left">
-              <div class="banner-home-caption__linklazy">
-                <a href="" class="banner-home-capton__link animate__animated animate__fadeInUp"> <span>Khám phá
-                    thêm</span> </a>
-              </div>
-            </div>
-        </a>
-      </div>
-    </div>
-    </div>
-    <div class="banner-home">
-      <div class="banner-home-img">
-        <a href="" class="banner-home__link">
-          <img class="banner-home__link--img" src="./home-image/img/HCO-7605-FESTIVE-2020-WEB-FB-2000X639_1.png" alt="">
-          <div class="banner-home-caption">
-            <div class="banner-home-caption__wrapper">
-              <div class="banner-home-caption__linklazy">
-                <a href="" class="banner-home-capton__link banner-home-capton__link-textgreen "> <span>Khám phá
-                    thêm</span> </a>
-              </div>
-            </div>
-        </a>
-      </div>
-    </div>
-    </div>
-    <div class="mainbottom">
-      <div class="container-fluid">
-        <div class="col-left">
-          <div class="wrap fr">
-            <div class="boxhome">
-              <div class="boxhome__tille">
-                <h2>QUÁN MỚI</h2>
-              </div>
-              <div class="boxhome__content">
-                <div class="boxhome__tille--slick">
-                  <div class="boxhome__tille--slick-slider">
-                    <div class="boxhome__tille--slick-slider-item">
-                      <ul>
-                        <li><a href="">721 Huỳnh tấn phát</a></li>
-                        <li><a href="">721 huỳnh tấn phát,phường phú nhuận, quận 7, thành phố hồ chí minh</a></li>
-                        <li><a href="">TÌM ĐƯỜNG
-                            <i class="fas fa-chevron-right"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="boxhome__tille--slick-slider-item">
-                      <ul>
-                        <li><a href="">Hàm cá mập</a></li>
-                        <li><a href="">Tầng 3,1-3-5 Đinh tiên hoàng,Phường hoàng trống , quận hoàng kiếm, hà nội</a>
-                        </li>
-                        <li><a href="">TÌM ĐƯỜNG
-                            <i class="fas fa-chevron-right"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="boxhome__tille--slick-slider-item">
-                      <ul>
-                        <li><a href="">Sân bay quốc tế đà nẵng</a></li>
-                        <li><a href="">Khu vực check-in ga quốc tế,sân bay đà nẳng,62 trần quốc toản,quận hải châu ,
-                            TP.Đà nẵng</a></li>
-                        <li><a href="">TÌM ĐƯỜNG
-                            <i class="fas fa-chevron-right"></i></li>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="myorder">
+        <p class="container myorder-text">Đơn hàng của tôi</p>
+        <div class="container">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <th>Mã Đơn Hàng</th>
+                        <th>Ngày Mua</th>
+                        <th>Sản Phẩm</th>
+                        <th>Size</th>
+                        <th>Tổng Tiền</th>
+                        <th>Trạng Thái Sản Phẩm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php
+                  foreach($orderManagement as $key => $value){
+                    ?>
+                    <tr>
+                        <td><?php echo $value['id' ]?></td>
+                        <td><?php echo $value['date_buy' ]?></td>
+                        <td><?php echo $value['name_product_Category' ]?></td>
+                        <td><?php echo $value['size' ]?></td>
+                        <td><?php echo $value['total_money' ]?></td>
+                        <td><?php echo $value['status' ]?></td>
+                    </tr>
+                    <?php
+                  }
+                  ?>
+                </tbody>
+            </table>
         </div>
-        <div class="col-right">
-          <div class="wrap fr">
-            <div class="boxhome">
-              <div class="boxhome__tille news-branch
-                ">
-                <h3 class="boxhome__tille-right-new">TIN MỚI NHẤT</h3>
-                <a class="boxhome__tille-right-link" href="">
-                  <span>Xem Toàn Bộ</span>
-                  <i class="fas fa-chevron-circle-right"></i>
-                </a>
-              </div>
-              <div class="boxhome__content">
-                <div class="boxhome__content-container">
-                  <a class="boxhome__content-container__link" href="">
-                    <img src="./home-image/img/HC_7654_MOONCAKE_2021_KV_1920X1080.jpg">
-                  </a>
-                  <div class="boxhome__content-container--heading">
-                    <a class="boxhome__content-container--heading-link" href="">
-                      BÁNH TRUNG THU HIGHLANDS COFFEE <span class="boxhome__content-container--heading--mobile"> - Sẻ
-                        chia tinh túy Đất Việt</span>
-                    </a>
-                    <div class="boxhome__content-container--heading-date">
-                      <i class="far fa-calendar"></i>
-                      <span>04/08/2021</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="boxhome__content-container">
-                  <a class="boxhome__content-container__link" href="">
-                    <img src="./home-image/img/470_crop_Highlands_-_Freeze_Tra_Xanh_-_KV_Phase_1_470x312.png">
-                  </a>
-                  <div class="boxhome__content-container--heading">
-                    <a class="boxhome__content-container--heading-link" href="">
-                      HIGHLANDS COFFEE - DỊCH VỤ <span class="boxhome__content-container--heading--mobile"> GIAO HÀNG
-                        MIỄN PHÍ</span>
-                    </a>
-                    <div class="boxhome__content-container--heading-date">
-                      <i class="far fa-calendar"></i>
-                      <span>29/03/2020</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="boxhome__content-container">
-                  <a class="boxhome__content-container__link" href="">
-                    <img src="./home-image/img/tra-sen-vang-moi.png">
-                  </a>
-                  <div class="boxhome__content-container--heading">
-                    <a class="boxhome__content-container--heading-link" href="">
-                      UỐNG TRÀ SEN VÀNG MỚI - NHẬN <span class="boxhome__content-container--heading--mobile">VÔ VÀN ƯU
-                        ĐÃI SEN VÀNG</span>
-                    </a>
-                    <div class="boxhome__content-container--heading-date">
-                      <i class="far fa-calendar"></i>
-                      <span>04/12/2019</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="boxhome__bottom">
-                <form action="" class="boxhome__bottom--form-control">
-                  <input type="email" placeholder="Nhập email của bạn để nhận thông tin... ">
-                  <button type="submit">
-                    <i class="far fa-paper-plane"></i>
-                    <span> Gửi </span>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </main>
   <!-- Footer -->

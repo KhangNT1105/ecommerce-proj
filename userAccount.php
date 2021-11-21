@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <title>Highlands Coffee</title>
   <!-- Required meta tags -->
@@ -31,6 +30,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Link-css  -->
   <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/userinfo.css">
 </head>
 
 <body>
@@ -530,182 +530,136 @@
   </header>
   <!-- Main -->
   <main>
-    <div class="slick-slider">
-      <a class="single-item-img" href="">
-        <img src="./home-image/img/HCO_7654_MOONCAKE_2021_KV_BANNER_1440X460.jpg" alt="" />
-      </a>
-      <a href="" class="single-item-img">
-        <img src="./home-image/img/HCO-7605-FESTIVE-2020-WEB-FB-2000X639_1.png" alt="" />
-      </a>
-      <a href="" class="single-item-img">
-        <img src="./home-image/img/web_1.png" alt="" />
-      </a>
-    </div>
-    <div class="banner-home">
-      <div class="banner-home-img">
-        <a href="" class="banner-home__link">
-          <img class="banner-home__link--img" src="./home-image/img/HCO-7548-PHIN-SUA-DA-2019-TALENT-WEB_1.jpg" alt="">
-          <div class="banner-home-caption">
-            <div class="banner-home-caption__wrapper">
-              <div class="banner-home-caption__linklazy">
-                <a href="" class="banner-home-capton__link animate__animated animate__fadeInUp"> <span>Khám phá
-                    thêm</span> </a>
-              </div>
-            </div>
-        </a>
-      </div>
-    </div>
-    </div>
-    <div class="banner-home">
-      <div class="banner-home-img">
-        <a href="" class="banner-home__link">
-          <img class="banner-home__link--img" src="./home-image/img/web_1.png" alt="">
-          <div class="banner-home-caption">
-            <div class="banner-home-caption__wrapper banner-home-caption__wrapper-left">
-              <div class="banner-home-caption__linklazy">
-                <a href="" class="banner-home-capton__link animate__animated animate__fadeInUp"> <span>Khám phá
-                    thêm</span> </a>
-              </div>
-            </div>
-        </a>
-      </div>
-    </div>
-    </div>
-    <div class="banner-home">
-      <div class="banner-home-img">
-        <a href="" class="banner-home__link">
-          <img class="banner-home__link--img" src="./home-image/img/HCO-7605-FESTIVE-2020-WEB-FB-2000X639_1.png" alt="">
-          <div class="banner-home-caption">
-            <div class="banner-home-caption__wrapper">
-              <div class="banner-home-caption__linklazy">
-                <a href="" class="banner-home-capton__link banner-home-capton__link-textgreen "> <span>Khám phá
-                    thêm</span> </a>
-              </div>
-            </div>
-        </a>
-      </div>
-    </div>
-    </div>
-    <div class="mainbottom">
-      <div class="container-fluid">
-        <div class="col-left">
-          <div class="wrap fr">
-            <div class="boxhome">
-              <div class="boxhome__tille">
-                <h2>QUÁN MỚI</h2>
-              </div>
-              <div class="boxhome__content">
-                <div class="boxhome__tille--slick">
-                  <div class="boxhome__tille--slick-slider">
-                    <div class="boxhome__tille--slick-slider-item">
-                      <ul>
-                        <li><a href="">721 Huỳnh tấn phát</a></li>
-                        <li><a href="">721 huỳnh tấn phát,phường phú nhuận, quận 7, thành phố hồ chí minh</a></li>
-                        <li><a href="">TÌM ĐƯỜNG
-                            <i class="fas fa-chevron-right"></i></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="boxhome__tille--slick-slider-item">
-                      <ul>
-                        <li><a href="">Hàm cá mập</a></li>
-                        <li><a href="">Tầng 3,1-3-5 Đinh tiên hoàng,Phường hoàng trống , quận hoàng kiếm, hà nội</a>
-                        </li>
-                        <li><a href="">TÌM ĐƯỜNG
-                            <i class="fas fa-chevron-right"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="boxhome__tille--slick-slider-item">
-                      <ul>
-                        <li><a href="">Sân bay quốc tế đà nẵng</a></li>
-                        <li><a href="">Khu vực check-in ga quốc tế,sân bay đà nẳng,62 trần quốc toản,quận hải châu ,
-                            TP.Đà nẵng</a></li>
-                        <li><a href="">TÌM ĐƯỜNG
-                            <i class="fas fa-chevron-right"></i></li>
-                        </a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <div class="myorder">
+      <p class="container myorder-text">Thông tin tài khoản</p>
+      <div class="container">
+        <p>Thông tin cá nhân</p>
+        <form class="form-group-changes" action="" method="post">
+          <div class="form-control__info-user">
+            <label for="">Họ & Tên</label>
+            <input type="text"> <br>
+          </div>
+          <div class="form-control__info-user">
+            <label for="">Nickname</label>
+            <input type="text" placeholder="Thêm nickname"  > <br>
+          </div>
+          <div class="form-control__info-user">
+            <label for="">Số điện thoại</label>
+            <input type="text"> <br>
+          </div>
+          <div class="form-control__info-user">
+            <label for="">Địa chỉ email</label>
+            <input type="email"> <br>
+          </div>
+
+          <div class="form-control__info-user">
+            <label for="">Ngày sinh</label>
+            <div class="datepicker">
+              <select name="day" id="days">
+                <option value="0">Ngày</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              <select name="month" id="months">
+                <option value="0">Tháng</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <select name="year" id="years">
+                <option value="0">Năm</option>
+                <option value="1">1990</option>
+                <option value="2">1991</option>
+                <option value="3">1992</option>
+                <option value="4">1993</option>
+                <option value="5">1994</option>
+                <option value="6">1995</option>
+                <option value="7">1996</option>
+                <option value="8">1997</option>
+                <option value="9">1998</option>
+                <option value="10">1999</option>
+                <option value="11">2000</option>
+                <option value="12">2001</option>
+                <option value="13">2002</option>
+                <option value="14">2003</option>
+                <option value="15">2004</option>
+                <option value="16">2005</option>
+                <option value="17">2006</option>
+                <option value="18">2007</option>
+                <option value="19">2008</option>
+                <option value="20">2009</option>
+                <option value="21">2010</option>
+                <option value="22">2011</option>
+                <option value="23">2012</option>
+                <option value="24">2013</option>
+                <option value="25">2014</option>
+                <option value="26">2015</option>
+                <option value="27">2016</option>
+                <option value="28">2017</option>
+                <option value="29">2018</option>
+                <option value="30">2019</option>
+                <option value="31">2020</option>
+                <option value="32">2021</option>
+              </select>
+
             </div>
           </div>
-        </div>
-        <div class="col-right">
-          <div class="wrap fr">
-            <div class="boxhome">
-              <div class="boxhome__tille news-branch
-                ">
-                <h3 class="boxhome__tille-right-new">TIN MỚI NHẤT</h3>
-                <a class="boxhome__tille-right-link" href="">
-                  <span>Xem Toàn Bộ</span>
-                  <i class="fas fa-chevron-circle-right"></i>
-                </a>
-              </div>
-              <div class="boxhome__content">
-                <div class="boxhome__content-container">
-                  <a class="boxhome__content-container__link" href="">
-                    <img src="./home-image/img/HC_7654_MOONCAKE_2021_KV_1920X1080.jpg">
-                  </a>
-                  <div class="boxhome__content-container--heading">
-                    <a class="boxhome__content-container--heading-link" href="">
-                      BÁNH TRUNG THU HIGHLANDS COFFEE <span class="boxhome__content-container--heading--mobile"> - Sẻ
-                        chia tinh túy Đất Việt</span>
-                    </a>
-                    <div class="boxhome__content-container--heading-date">
-                      <i class="far fa-calendar"></i>
-                      <span>04/08/2021</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="boxhome__content-container">
-                  <a class="boxhome__content-container__link" href="">
-                    <img src="./home-image/img/470_crop_Highlands_-_Freeze_Tra_Xanh_-_KV_Phase_1_470x312.png">
-                  </a>
-                  <div class="boxhome__content-container--heading">
-                    <a class="boxhome__content-container--heading-link" href="">
-                      HIGHLANDS COFFEE - DỊCH VỤ <span class="boxhome__content-container--heading--mobile"> GIAO HÀNG
-                        MIỄN PHÍ</span>
-                    </a>
-                    <div class="boxhome__content-container--heading-date">
-                      <i class="far fa-calendar"></i>
-                      <span>29/03/2020</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="boxhome__content-container">
-                  <a class="boxhome__content-container__link" href="">
-                    <img src="./home-image/img/tra-sen-vang-moi.png">
-                  </a>
-                  <div class="boxhome__content-container--heading">
-                    <a class="boxhome__content-container--heading-link" href="">
-                      UỐNG TRÀ SEN VÀNG MỚI - NHẬN <span class="boxhome__content-container--heading--mobile">VÔ VÀN ƯU
-                        ĐÃI SEN VÀNG</span>
-                    </a>
-                    <div class="boxhome__content-container--heading-date">
-                      <i class="far fa-calendar"></i>
-                      <span>04/12/2019</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="boxhome__bottom">
-                <form action="" class="boxhome__bottom--form-control">
-                  <input type="email" placeholder="Nhập email của bạn để nhận thông tin... ">
-                  <button type="submit">
-                    <i class="far fa-paper-plane"></i>
-                    <span> Gửi </span>
-                  </button>
-                </form>
-              </div>
-            </div>
+          <div class="form-control__info-user">
+            <label for="">Đổi mật khẩu</label>
+            <button type="button" class="btn btn-outline-primary">Cập Nhật</button> <br/>
           </div>
-        </div>
+          <div class="form-control__info-user--gender">
+            
+            <label for="">Giới tính </label>
+            <input type="radio" name="gender" value="male" checked><span>Nam</span>
+            <input type="radio" name="gender" value="female"><span>Nữ</span>
+            <input type="radio" name="gender" value="other"><span>Khác</span><br>
+          </div>
+          <button type="submit" class="btn btn-primary">Lưu Thay Đổi </button>
+        </form>
+          
+          
       </div>
-    </div>
-  </main>
+  </div>
+</main>
   <!-- Footer -->
   <footer id="footer">
     <div class="container footer-container">
@@ -977,7 +931,8 @@
     integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
     crossorigin="anonymous"></script>
   <!-- homejs -->
-  <script src="./js/home.js"></script>
+    <script src="./js/home.js"></script>
+  
 </body>
 
 </html>
