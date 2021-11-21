@@ -1,11 +1,10 @@
 <?php
-               include './postValue.php'
+               include './postCategoryValue.php'
             ?>
             <table class = "table table-striped table-advance table-hover">
               <tr>
                 <th>Mã danh mục</th>
                 <th>Tên danh mục bài viết </th>
-                <th>Mô tả</th>
                 <th>Ngày tạo</th>
                 <th>Tên người tạo</th>
                 <th></th>
@@ -21,11 +20,8 @@
                   
                   <td> <?php echo $value['product_id' ]?> </td>
                   <td> <?php echo $value['product_name' ]?> </td>
-                  <td> <?php echo $value['status' ]?> </td>
                   <td> <?php echo $value['date_created' ]?> </td>
                   <td> <?php echo $value['name_product_Category' ]?> </td>
-                  
-                 
                   <td>
                     <form action="./product-HandleUpdateAndDelete.php" method="POST">
                       <button class="btn btn-theme"type="submit" name="btnUpdate" value="<?php echo $value['product_id']?>">Cập nhật

@@ -25,7 +25,6 @@ $ListDMSP = array(
                 4=> array(
                           "product_id" => 4,
                           "product_name" => "Bài viết 4",
-                          "productCategory " =>2,
                            "name_product_Category" => 'Lê Minh Tú',
                           "date_created" => "01/11/2021",
                           

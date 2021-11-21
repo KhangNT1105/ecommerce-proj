@@ -53,27 +53,26 @@
     <!--main content start-->
     <section id="main-content">
       <section class="wrapper site-min-height">
-        <h3><i class="fa fa-angle-right"></i> Quản lý danh mục bài viết</h3>
+        <h3 style="font-weight:bold"><i class="fa fa-angle-right"></i> Quản lí bài viết</h3>
         <div class="row mt">
           <div class="col-lg-12">
-              <?php
-                include './postCategoryShow.php'
-              ?>
+            <?php
+              include './postManagementShow.php'
+            ?>
           </div>
         </div>
       </section>
       <!-- /wrapper -->
     </section>
     <!-- /MAIN CONTENT -->
-    
     <!--main content end-->
     <!--footer start-->
-    <footer class="site-footer">
+    <!-- <footer class="site-footer">
       <div class="text-center">
         <p>
           &copy; Copyrights <strong>Dashio</strong>. All Rights Reserved
         </p>
-        <div class="credits">
+        <div class="credits"> -->
           <!--
             You are NOT allowed to delete the credit link to TemplateMag with free version.
             You can delete the credit link only if you bought the pro version.

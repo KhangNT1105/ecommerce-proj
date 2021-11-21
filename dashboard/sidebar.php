@@ -35,6 +35,18 @@ $component = $components[3];
               <span>Quản lí người dùng</span>
               </a>
           </li>
+          <li>
+            <a class="<?php if ($component=="postManagement.php") {echo "active"; } ?>" href="postManagement.php">
+              <i class="fa fa-th"></i>
+              <span>Quản lí bài viết</span>
+              </a>
+          </li>
+          <li>
+            <a class="<?php if ($component=="postCategoryManagement.php") {echo "active"; } ?>" href="postCategoryManagement.php">
+              <i class="fa fa-th"></i>
+              <span>Quản lí danh mục bài viết</span>
+              </a>
+          </li>
         </ul>
         <!-- sidebar menu end-->
       </div>

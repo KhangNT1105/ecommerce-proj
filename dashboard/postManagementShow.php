@@ -1,10 +1,11 @@
 <?php
-               include './userValue.php'
+               include './postValue.php'
             ?>
             <table class = "table table-striped table-advance table-hover">
               <tr>
                 <th>ID</th>
                 <th>Tên bài viết</th>
+                <th>Mô tả</th>
                 <th>Ngày tạo</th>
                 <th>Tên gười tạo</th>
                 <th></th>
@@ -20,6 +21,7 @@
                   
                   <td> <?php echo $value['product_id' ]?> </td>
                   <td> <?php echo $value['product_name' ]?> </td>
+                  <td> <?php echo $value['product_description' ]?> </td>
                   <td> <?php echo $value['date_created' ]?> </td>
                   <td> <?php echo $value['name_product_Category' ]?> </td>
                   
