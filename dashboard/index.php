@@ -53,17 +53,12 @@
     <!--main content start-->
     <section id="main-content">
       <section class="wrapper site-min-height">
-        <h3 style="font-weight:bold"><i class="fa fa-angle-right"></i> Quản lí danh mục sản phẩm</h3>
-
+        <h3 style="font-weight:bold"><i class="fa fa-angle-right"></i> Quản lí sản phẩm</h3>
         <div class="row mt">
           <div class="col-lg-12">
-            <!-- Content here -->
             <?php
-              include './productCategory-Show.php'
+              include './product-Show.php'
             ?>
-
-            <!-- content here -->
-
           </div>
         </div>
       </section>
@@ -84,13 +79,13 @@
             Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
             Licensing information: https://templatemag.com/license/
           -->
-          <!-- Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>
+          Created with Dashio template by <a href="https://templatemag.com/">TemplateMag</a>
         </div>
         <a href="blank.html#" class="go-top">
           <i class="fa fa-angle-up"></i>
           </a>
       </div>
-    </footer> -->
+    </footer>
     <!--footer end-->
   </section>
   <!-- js placed at the end of the document so the pages load faster -->
