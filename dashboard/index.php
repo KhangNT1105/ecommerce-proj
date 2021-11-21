@@ -1,3 +1,7 @@
+<?php
+  session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +11,7 @@
   <meta name="description" content="">
   <meta name="author" content="Dashboard">
   <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-  <title>Dashio - Bootstrap Admin Template</title>
+  <title>Trang Admin</title>
 
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
@@ -44,7 +48,8 @@
         *********************************************************************************************************************************************************** -->
     <!--sidebar start-->
     <?php
-              include './sidebar.php'
+              // $_SESSION["test"] = $_SESSION["user_name"];
+              include './sidebar.php';
             ?>
     <!--sidebar end-->
     <!-- **********************************************************************************************************************************************************
