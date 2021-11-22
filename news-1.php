@@ -1,10 +1,13 @@
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<?php
+              include './header.php'
+            ?>
 <div class="container">
     <div class="cover">
     <h2> HIGHLANDS CẬP NHẬT GIÁ BÁN THEO CHÍNH SÁCH THUẾ GTGT MỚI</h2>
     <div class="date"><i class="far fa-calendar"></i>Thứ hai, 01/11/2021, 11:44 GMT+7</div>
     <div class="content">
-        <div class="img"><img src="./img/New_1.jpg" alt=""></div>
+        <div class="img"><img src="./image/New_1.jpg" alt=""></div>
         <p>&nbsp;</p>
         <p class="text">Căn cứ theo Nghị quyết 406/NQ-UBTVQH15 về miễn, giảm thuế trong năm 2021 của Ủy Ban Thường Vụ Quốc Hội, Highlands Coffee sẽ điều chỉnh thuế GTGT trên mỗi sản phẩm từ 10% xuống 7%.</p>
         <p class="text">*Lưu ý: Hãy cập nhật phiên bản ứng dụng mới nhất để được cập nhật về giá đối với hình thức mua hàng qua Ứng Dụng Di Động Highlands Coffee bạn nhé</p>
@@ -41,6 +44,9 @@
     <div><p>&nbsp;</p></div>
     </div>
 </div>
+<?php
+              include './footer.php'
+            ?>
 <style>
     html{
         font-family: 'Open Sans', sans-serif;
