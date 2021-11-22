@@ -40,24 +40,24 @@
   <!-- Main -->
   <main class="homePage">
     <div class="slick-slider">
-      <a class="single-item-img" href="">
+      <a class="single-item-img" href="menuOrder.php">
         <img src="./home-image/img/HCO_7654_MOONCAKE_2021_KV_BANNER_1440X460.jpg" alt="" />
       </a>
-      <a href="" class="single-item-img">
+      <a href="menuOrder.php" class="single-item-img">
         <img src="./home-image/img/HCO-7605-FESTIVE-2020-WEB-FB-2000X639_1.png" alt="" />
       </a>
-      <a href="" class="single-item-img">
+      <a href="menuOrder.php" class="single-item-img">
         <img src="./home-image/img/web_1.png" alt="" />
       </a>
     </div>
     <div class="banner-home">
       <div class="banner-home-img">
-        <a href="" class="banner-home__link">
+        <a href="menuOrder.php" class="banner-home__link">
           <img class="banner-home__link--img" src="./home-image/img/HCO-7548-PHIN-SUA-DA-2019-TALENT-WEB_1.jpg" alt="">
           <div class="banner-home-caption">
             <div class="banner-home-caption__wrapper">
               <div class="banner-home-caption__linklazy">
-                <a href="" class="banner-home-capton__link animate__animated animate__fadeInUp"> <span>Khám phá
+                <a href="menuOrder.php" class="banner-home-capton__link animate__animated animate__fadeInUp"> <span>Khám phá
                     thêm</span> </a>
               </div>
             </div>
@@ -67,12 +67,12 @@
     </div>
     <div class="banner-home">
       <div class="banner-home-img">
-        <a href="" class="banner-home__link">
+        <a href="menuOrder.php" class="banner-home__link">
           <img class="banner-home__link--img" src="./home-image/img/web_1.png" alt="">
           <div class="banner-home-caption">
             <div class="banner-home-caption__wrapper banner-home-caption__wrapper-left">
               <div class="banner-home-caption__linklazy">
-                <a href="" class="banner-home-capton__link animate__animated animate__fadeInUp"> <span>Khám phá
+                <a href="menuOrder.php" class="banner-home-capton__link animate__animated animate__fadeInUp"> <span>Khám phá
                     thêm</span> </a>
               </div>
             </div>
@@ -82,12 +82,12 @@
     </div>
     <div class="banner-home">
       <div class="banner-home-img">
-        <a href="" class="banner-home__link">
+        <a href="menuOrder.php" class="banner-home__link">
           <img class="banner-home__link--img" src="./home-image/img/HCO-7605-FESTIVE-2020-WEB-FB-2000X639_1.png" alt="">
           <div class="banner-home-caption">
             <div class="banner-home-caption__wrapper">
               <div class="banner-home-caption__linklazy">
-                <a href="" class="banner-home-capton__link banner-home-capton__link-textgreen "> <span>Khám phá
+                <a href="menuOrder.php" class="banner-home-capton__link banner-home-capton__link-textgreen "> <span>Khám phá
                     thêm</span> </a>
               </div>
             </div>
@@ -148,18 +148,18 @@
               <div class="boxhome__tille news-branch
                 ">
                 <h3 class="boxhome__tille-right-new">TIN MỚI NHẤT</h3>
-                <a class="boxhome__tille-right-link" href="">
+                <a class="boxhome__tille-right-link" href="productNews-Show.php">
                   <span>Xem Toàn Bộ</span>
                   <i class="fas fa-chevron-circle-right"></i>
                 </a>
               </div>
               <div class="boxhome__content">
                 <div class="boxhome__content-container">
-                  <a class="boxhome__content-container__link" href="">
+                  <a class="boxhome__content-container__link" href="productNews-Show.php">
                     <img src="./home-image/img/HC_7654_MOONCAKE_2021_KV_1920X1080.jpg">
                   </a>
                   <div class="boxhome__content-container--heading">
-                    <a class="boxhome__content-container--heading-link" href="">
+                    <a class="boxhome__content-container--heading-link" href="productNews-Show.php">
                       BÁNH TRUNG THU HIGHLANDS COFFEE <span class="boxhome__content-container--heading--mobile"> - Sẻ
                         chia tinh túy Đất Việt</span>
                     </a>
@@ -170,11 +170,11 @@
                   </div>
                 </div>
                 <div class="boxhome__content-container">
-                  <a class="boxhome__content-container__link" href="">
+                  <a class="boxhome__content-container__link" href="productNews-Show.php">
                     <img src="./home-image/img/470_crop_Highlands_-_Freeze_Tra_Xanh_-_KV_Phase_1_470x312.png">
                   </a>
                   <div class="boxhome__content-container--heading">
-                    <a class="boxhome__content-container--heading-link" href="">
+                    <a class="boxhome__content-container--heading-link" href="productNews-Show.php">
                       HIGHLANDS COFFEE - DỊCH VỤ <span class="boxhome__content-container--heading--mobile"> GIAO HÀNG
                         MIỄN PHÍ</span>
                     </a>
@@ -189,7 +189,7 @@
                     <img src="./home-image/img/tra-sen-vang-moi.png">
                   </a>
                   <div class="boxhome__content-container--heading">
-                    <a class="boxhome__content-container--heading-link" href="">
+                    <a class="boxhome__content-container--heading-link" href="productNews-Show.php">
                       UỐNG TRÀ SEN VÀNG MỚI - NHẬN <span class="boxhome__content-container--heading--mobile">VÔ VÀN ƯU
                         ĐÃI SEN VÀNG</span>
                     </a>

@@ -197,7 +197,7 @@
   <header id="header">
     <div class="container wapper-header">
       <div class="container-logo-left">
-        <a class="container-logo-left__link" href="./index.php">
+        <a class="container-logo-left__link" href="./index.html">
           <img class="container-logo-left__link--img" src="./home-image/img/1200px-Highlands_Coffee_logo.svg.png"
             alt="logo" />
         </a>
