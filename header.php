@@ -70,8 +70,6 @@
           <a class="menu-hidden__content--item-signin" href="">ĐĂNG NHẬP</a>
           <i class="far fa-user"></i>
         </li>
-        <li class="menu-hidden__content--item animate__animated animate__fadeInRight"> <a href=""> QUÁN CÀ
-            PHÊ</a></li>
         <li class="menu-hidden__content--item animate__animated animate__fadeInRight ">
           <a href="">THỰC ĐƠN</a>
           <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon  "></i>
@@ -166,29 +164,6 @@
           </li>
         </ul>
         <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
-          <a href="">TRÁCH NHIỆM CỘNG ĐỒNG </a>
-          <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-community "></i>
-        </li>
-        <ul class="menu-hidden__content--list submenu-hidden__list-community">
-          <li class="menu-hidden__content--item  submenu-hidden__item">
-            <a class="" href="">Giá trị văn hóa việt</a>
-            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-cultural  "></i>
-          </li>
-          <ul class="menu-hidden__content--list submenu-hidden__list--cultural">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Đại cương hóa tranh đông
-                hồ</a>
-            </li>
-          </ul>
-          <li class="menu-hidden__content--item  submenu-hidden__item ">
-            <a href="">Cộng đồng</a>
-            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-communities "></i>
-          </li>
-          <ul class="menu-hidden__content--list submenu-hidden__list--communities">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Lớp học cho em </a>
-            </li>
-          </ul>
-        </ul>
-        <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
           <a href="">VỀ CHÚNG TÔI</a>
           <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-gobackme"></i>
         </li>
@@ -243,11 +218,6 @@
         </div>
         <nav class="nav-bar">
           <ul class="nav-bar__list">
-            <li class="nav-bar__item">
-              <a href="" class="nav-bar__item--link">
-                <span>QUÁN CÀ PHÊ</span>
-              </a>
-            </li>
             <li class="nav-bar__item">
               <a href="./productList.php" class="nav-bar__item--link">
                 <span>THỰC ĐƠN</span>
@@ -459,7 +429,7 @@
               </div>
             </li>
             <li class="nav-bar__item">
-              <a href="javascript:;" class="nav-bar__item--link">
+              <a href="productNews-Show.php" class="nav-bar__item--link">
                 <span>TIN TỨC</span>
               </a>
               <div class="sub-menu">
@@ -511,75 +481,6 @@
                     </div>
                   </li>
 
-                </ul>
-              </div>
-            </li>
-            <li class="nav-bar__item">
-              <a href="javascript:;" class="nav-bar__item--link">
-                <span>TRÁCH NHIỆM CỘNG ĐỒNG</span>
-              </a>
-              <div class="sub-menu">
-                <ul class="sub-menu__list">
-                  <li class="sub-menu__item sub-menu__item-coffee">
-                    <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                    <a class="sub-menu__item--link animate__animated animate__fadeInUp" href="javascript:;">
-                      Giá trị văn hóa việt
-                    </a>
-                    <div class="sub-menu__item--child">
-                      <div class="sub-menu__item--child-content">
-                        <ul class="sub-menu__item--child-list">
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="" class="sub-menu__item--child-item--link  animate__animated animate__headShake">
-                              Đương đại hóa tranh đông hồ </a>
-                          </li>
-                        </ul>
-                        <div class="sub-menu__item--child-card">
-                          <div class="card-sub-menu">
-                            <div class="card">
-                              <a href=""><img src="./home-image/img/KV_Highlands_CSR_1.jpg" class="card-img-top"
-                                  alt="..."></a>
-                              <div class="card-body">
-                                <a href="">
-                                  <p class="card-text">Đương đại hóa tranh đông hồ</p>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="sub-menu__item sub-menu__item-freeze">
-                    <i class="fas fa-caret-right sub-menu__item--icon"></i><a
-                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="javascript:;"> Cộng
-                      đồng</a>
-                    <div class="sub-menu__item--child">
-                      <div class="sub-menu__item--child-content">
-                        <ul class="sub-menu__item--child-list">
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href=""
-                              class="sub-menu__item--child-item--link  animate__animated animate__headShake">Lớp học cho
-                              em</a>
-                          </li>
-                        </ul>
-                        <div class="sub-menu__item--child-card">
-                          <div class="card-sub-menu">
-                            <div class="card">
-                              <a href=""><img src="./home-image/img/KV_Highlands_CSR_1.jpg" class="card-img-top"
-                                  alt="..."></a>
-                              <div class="card-body">
-                                <a href="">
-                                  <p class="card-text">Đương đại hóa tranh đông hồ</p>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
                 </ul>
               </div>
             </li>

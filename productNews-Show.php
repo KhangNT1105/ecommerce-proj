@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<?php
+              include './header.php'
+            ?>
 <?Php
 include './productNews-Value.php'
 ?>
@@ -66,3 +69,6 @@ include './productNews-Value.php'
         font-size: 53px;
     }
 </style>
+<?php
+              include './footer.php'
+            ?>
