@@ -70,7 +70,7 @@
           <a class="menu-hidden__content--item-signin" href="">ĐĂNG NHẬP</a>
           <i class="far fa-user"></i>
         </li>
-        <li class="menu-hidden__content--item animate__animated animate__fadeInRight"><a class="" href="">QUÁN CÀ
+        <li class="menu-hidden__content--item animate__animated animate__fadeInRight"> <a href=""> QUÁN CÀ
             PHÊ</a></li>
         <li class="menu-hidden__content--item animate__animated animate__fadeInRight ">
           <a href="">THỰC ĐƠN</a>
@@ -268,14 +268,14 @@
               </a>
             </li>
             <li class="nav-bar__item">
-              <a href="./productList.html" class="nav-bar__item--link">
+              <a href="./productList.php" class="nav-bar__item--link">
                 <span>THỰC ĐƠN</span>
               </a>
               <div class="sub-menu">
                 <ul class="sub-menu__list">
                   <li class="sub-menu__item sub-menu__item-coffee">
                     <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                    <a class="sub-menu__item--link animate__animated animate__fadeInUp" href="javascript:;"> Cà phê </a>
+                    <a class="sub-menu__item--link animate__animated animate__fadeInUp" href=""> Cà phê </a>
                     <div class="sub-menu__item--child">
                       <div class="sub-menu__item--child-content">
                         <ul class="sub-menu__item--child-list">
@@ -603,7 +603,7 @@
               </div>
             </li>
             <li class="nav-bar__item">
-              <a href="javascript:;" class="nav-bar__item--link">
+              <a href="./goback.php" class="nav-bar__item--link">
                 <span>VỀ CHÚNG TÔI</span>
               </a>
               <div class="sub-menu">

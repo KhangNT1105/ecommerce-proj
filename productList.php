@@ -55,8 +55,9 @@
                             <div class="carousel">
                                 <div class="carousel__item">
                                     <div class="carousel__item__img">
-                                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
+                                        <a href="./menuOrder.php"> <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
                                             alt="coffee">
+                                         </a>
                                     </div>
                                     <div class="carousel__item__title">
                                         <h5>PHIN ĐEN NÓNG</h5>
@@ -67,8 +68,8 @@
                                 </div>
                                 <div class="carousel__item">
                                     <div class="carousel__item__img">
-                                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
-                                            alt="coffee">
+                                    <a href="./menuOrder.php">  <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
+                                            alt="coffee"></a>
                                     </div>
                                     <div class="carousel__item__title">
                                         <h5>PHIN ĐEN NÓNG</h5>
@@ -79,8 +80,8 @@
                                 </div>
                                 <div class="carousel__item">
                                     <div class="carousel__item__img">
-                                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
-                                            alt="coffee">
+                                    <a href="./menuOrder.php"> <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
+                                            alt="coffee"></a>
                                     </div>
                                     <div class="carousel__item__title">
                                         <h5>PHIN ĐEN NÓNG</h5>
@@ -91,8 +92,8 @@
                                 </div>
                                 <div class="carousel__item">
                                     <div class="carousel__item__img">
-                                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
-                                            alt="coffee">
+                                    <a href="./menuOrder.php">  <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
+                                            alt="coffee"></a>
                                     </div>
                                     <div class="carousel__item__title">
                                         <h5>PHIN ĐEN NÓNG</h5>
@@ -103,8 +104,8 @@
                                 </div>
                                 <div class="carousel__item">
                                     <div class="carousel__item__img">
-                                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
-                                            alt="coffee">
+                                    <a href="./menuOrder.php"> <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
+                                            alt="coffee"></a>
                                     </div>
                                     <div class="carousel__item__title">
                                         <h5>PHIN ĐEN NÓNG</h5>
@@ -131,8 +132,8 @@
                             <div class="carousel">
                                 <div class="carousel__item">
                                     <div class="carousel__item__img">
-                                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
-                                            alt="coffee">
+                                    <a href="./menuOrder.php"> <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
+                                            alt="coffee"></a>
                                     </div>
                                     <div class="carousel__item__title">
                                         <h5>PHIN ĐEN NÓNG</h5>
@@ -143,8 +144,8 @@
                                 </div>
                                 <div class="carousel__item">
                                     <div class="carousel__item__img">
-                                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
-                                            alt="coffee">
+                                    <a href="./menuOrder.php"> <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
+                                            alt="coffee"></a>
                                     </div>
                                     <div class="carousel__item__title">
                                         <h5>PHIN ĐEN NÓNG</h5>
@@ -155,8 +156,8 @@
                                 </div>
                                 <div class="carousel__item">
                                     <div class="carousel__item__img">
-                                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
-                                            alt="coffee">
+                                    <a href="./menuOrder.php"> <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
+                                            alt="coffee"></a>
                                     </div>
                                     <div class="carousel__item__title">
                                         <h5>PHIN ĐEN NÓNG</h5>
@@ -167,8 +168,8 @@
                                 </div>
                                 <div class="carousel__item">
                                     <div class="carousel__item__img">
-                                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
-                                            alt="coffee">
+                                    <a href="./menuOrder.php"> <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
+                                            alt="coffee"></a>
                                     </div>
                                     <div class="carousel__item__title">
                                         <h5>PHIN ĐEN NÓNG</h5>
@@ -179,8 +180,8 @@
                                 </div>
                                 <div class="carousel__item">
                                     <div class="carousel__item__img">
-                                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
-                                            alt="coffee">
+                                    <a href="./menuOrder.php">  <img src="https://www.highlandscoffee.com.vn/vnt_upload/product/03_2018/thumbs/270_crop_PHIN-SUA-DA.png"
+                                            alt="coffee"></a>
                                     </div>
                                     <div class="carousel__item__title">
                                         <h5>PHIN ĐEN NÓNG</h5>
