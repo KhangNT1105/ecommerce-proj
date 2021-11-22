@@ -1,16 +1,27 @@
-<?php 
+<?php
+session_start();
+
 $directoryURI = $_SERVER['REQUEST_URI'];
 $path = parse_url($directoryURI, PHP_URL_PATH);
 $components = explode('/', $path);
 $component = $components[3];
 ?>
+<style>
 
+  .img-user {
+    width: 50%;
+    border-radius: 20px;
+  }
+
+</style>
 <aside>
   <div id="sidebar" class="nav-collapse ">
     <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="profile.html"><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
-          <h5 class="centered">Sam Soffes</h5>
+          <p class="centered"><a href="profile.html"><img src="img/viz.jpg" class="img-user" ></a></p>
+          <h5 class="centered">
+            <?php echo $_SESSION["user_name"]; ?>
+          </h5>
           <li>
               <a class="<?php if ($component==""||$component =="index.php") {echo "active"; } ?>" href="index.php">
               <i class="fa fa-th"></i>
