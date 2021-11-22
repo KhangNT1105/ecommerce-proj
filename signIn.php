@@ -1,3 +1,9 @@
+<?php
+session_start();
+$username = $_POST['email_login'] ?? '';
+$password = $_POST['password_login'] ?? '';
+$_SESSION['submit_login'] = $username;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,16 +28,15 @@
         </div>
 
         <div class="signIn">
-            <form action="" method="POST" id="form-sign-in">
-                <a href="./dashboard/signIn.php">Đăng nhập với tư cách là quản trị viên.</a>
+            <form action="./userAccount.php" method="post" id="form-sign-in">
                 <div class="formGroup">
-                    <input type="email" name="email" id="email" placeholder=" ">
+                    <input type="email" name="email_login" id="email" placeholder=" "> 
                     <label for="email" class="form__label">Email</label>
                     <span class="errorMess"></span>
                 </div>
 
                 <div class="formGroup">
-                    <input type="password" name="password" id="password" placeholder=" ">
+                    <input type="password" name="password_login" id="password" placeholder=" "> 
                     <label for="password" class="form__label">Mật khẩu</label>
                     <span class="errorMess"></span>
                 </div>
@@ -43,7 +48,7 @@
                     </div>
                     <a href="#" class="bold">Quên mật khẩu</a>
                 </div>
-                <button type="submit" id="btn--signIn">Đăng nhập</button>
+                <input type="submit" name="submit_login" id="btn--signIn" value="Đăng Nhập"></input>
             </form>
         </div>
 
@@ -54,7 +59,7 @@
         </div>
     </div>
     <script type="text/javascript" src="./js/validator.js"></script>
-    <script>
+    <!-- <script>
         validator({
             form: '#form-sign-in',
             formGroupSelector: '.formGroup',
@@ -76,6 +81,6 @@
             }
         })
 
-    </script>
+    </script> -->
 </body>
 </html>

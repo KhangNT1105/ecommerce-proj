@@ -235,27 +235,8 @@
             <a href="" class="header-language-link-en"><img src="./home-image/img/flag-en.jpg" alt="" />
             </a>
           </div>
-          <!-- <div class="header-signup">
-            <a href="./signIn.html" class="header-signup__link"><span> ĐĂNG NHẬP </span></a>
-            <a href="./signUp.html" class="header-signup__link-register"><span> ĐĂNG KÍ</span> </a>
-          </div> -->
-          <div class="user-info">
-            <a class="user-info__link" href="">
-              <i class="far fa-user user-info__link--icon"></i>
-              <span class="user-info__link--name">Lê Minh Tú</span>
-              <i class="fas fa-sort-down user-info__link--icon"></i>
-            </a>
-            <div class="subuser-info">
-              <a class="subuser-info__link" href="./userInfo.php">
-                <p>Đơn hàng của tôi</p>
-              </a>
-              <a class="subuser-info__link" href="./userAccount.php">
-                <p>Tài khoản của tôi</p>
-              </a>
-            </div>
-            
-
-          </div>
+          <?php include 'login.php'; ?>
+          <!-- <?php include 'currentLogin.php'; ?> -->
           
 
         
