@@ -4,7 +4,7 @@ session_start();
 $directoryURI = $_SERVER['REQUEST_URI'];
 $path = parse_url($directoryURI, PHP_URL_PATH);
 $components = explode('/', $path);
-$component = $components[3];
+$component = $components[count($components)-1];
 ?>
 <style>
 
@@ -20,7 +20,7 @@ $component = $components[3];
         <ul class="sidebar-menu" id="nav-accordion">
           <p class="centered"><a href="profile.html"><img src="img/viz.jpg" class="img-user" ></a></p>
           <h5 class="centered">
-            <?php echo $_SESSION["user_name"]; ?>
+            <?php echo $_SESSION["user_name"]??""; ?>
           </h5>
           <li>
               <a class="<?php if ($component==""||$component =="index.php") {echo "active"; } ?>" href="index.php">
