@@ -76,84 +76,84 @@
           <i class="far fa-user"></i>
         </li>
         <li class="menu-hidden__content--item animate__animated animate__fadeInRight ">
-          <a href="">THỰC ĐƠN</a>
+          <a href="./menuOrder.php">THỰC ĐƠN</a>
           <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon  "></i>
         </li>
         <ul class="menu-hidden__content--list submenu-hidden__list">
           <li class="menu-hidden__content--item  submenu-hidden__item">
-            <a class="" href="">CÀ PHÊ</a>
+            <a class="" href="./menuOrder.php">CÀ PHÊ</a>
             <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-coffee  "></i>
           </li>
           <ul class="menu-hidden__content--list submenu submenu-hidden__list--coffee">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Cà Phê Phin</a>
+            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="./menuOrder.php">Cà Phê Phin</a>
             </li>
             <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">PhinDi</a>
+              <a href="./menuOrder.php">PhinDi</a>
             </li>
             <li class="menu-hidden__content--item  submenu-hidden__item">
-              <a href="">Cà Phê Expresso</a>
+              <a href="./menuOrder.php">Cà Phê Expresso</a>
             </li>
           </ul>
           <li class="menu-hidden__content--item  submenu-hidden__item ">
-            <a href="">FREEZE</a>
+            <a href="./menuOrder.php">FREEZE</a>
             <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-freeze "></i>
           </li>
           <ul class="menu-hidden__content--list submenu submenu-hidden__list--freeze">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Cà Phê Phin</a>
+            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="./menuOrder.php">Cà Phê Phin</a>
             </li>
             <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">PhinDi</a>
+              <a href="./menuOrder.php">PhinDi</a>
             </li>
           </ul>
           <li class="menu-hidden__content--item  submenu-hidden__item">
-            <a href="">TRÀ</a>
+            <a href="./menuOrder.php">TRÀ</a>
             <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-tea "></i>
           </li>
           <ul class="menu-hidden__content--list submenu submenu-hidden__list--tea">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Trà Sen Vàng</a>
+            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="./menuOrder.php">Trà Sen Vàng</a>
             </li>
             <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Trà Thạch Đào</a>
+              <a href="./menuOrder.php">Trà Thạch Đào</a>
             </li>
             <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Trà Thanh Đào</a>
+              <a href="./menuOrder.php">Trà Thanh Đào</a>
             </li>
             <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Trà Thạch Vải </a>
+              <a href="./menuOrder.php">Trà Thạch Vải </a>
             </li>
           </ul>
           <li class="menu-hidden__content--item  submenu-hidden__item">
-            <a href="">BÁNH MÌ</a>
+            <a href="./menuOrder.php">BÁNH MÌ</a>
             <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-bakery"></i>
           </li>
           <ul class="menu-hidden__content--list submenu submenu-hidden__list--bakery">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Thịt Nướng</a>
+            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="./menuOrder.php">Thịt Nướng</a>
             </li>
             <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Xíu Mại</a>
+              <a href="./menuOrder.php">Xíu Mại</a>
             </li>
             <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Chả Lụa Xá Xíu</a>
+              <a href="./menuOrder.php">Chả Lụa Xá Xíu</a>
             </li>
             <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Gà Xé Nước Tương</a>
+              <a href="./menuOrder.php">Gà Xé Nước Tương</a>
             </li>
           </ul>
           <li class="menu-hidden__content--item submenu  submenu-hidden__item">
-            <a href="">KHÁC</a>
+            <a href="./menuOrder.php">KHÁC</a>
             <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-order"></i>
           </li>
           <ul class="menu-hidden__content--list submenu submenu-hidden__list--order">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Bánh Ngọt</a>
+            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="./menuOrder.php">Bánh Ngọt</a>
             </li>
             <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Merchandise</a>
+              <a href="./menuOrder.php">Merchandise</a>
             </li>
             <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Cà Phê Đóng Gói</a>
+              <a href="./menuOrder.php">Cà Phê Đóng Gói</a>
             </li>
             <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="">Thực Đơn Giao Hàng</a>
+              <a href="./menuOrder.php">Thực Đơn Giao Hàng</a>
             </li>
           </ul>
         </ul>
@@ -162,24 +162,24 @@
           <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-news"></i>
         </li>
         <ul class="menu-hidden__content--list submenu-hidden__list--news">
-          <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">Tin Tức Và Sự Kiện</a>
+          <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="./news-1.php">Tin Tức Và Sự Kiện</a>
           </li>
           <li class="menu-hidden__content--item  submenu-hidden__item ">
-            <a href="">Tin Khuyến Mãi</a>
+            <a href="./news-1.php">Tin Khuyến Mãi</a>
           </li>
         </ul>
         <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
-          <a href="">VỀ CHÚNG TÔI</a>
+          <a href="./goback.php">VỀ CHÚNG TÔI</a>
           <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-gobackme"></i>
         </li>
         <ul class="menu-hidden__content--list submenu-hidden__list--gobackme">
-          <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="">KHỞI NGUỒN</a>
+          <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="./goback.php">KHỞI NGUỒN</a>
           </li>
           <li class="menu-hidden__content--item  submenu-hidden__item ">
-            <a href="">DỊCH VỤ KHÁCH HÀNG</a>
+            <a href="./goback.php">DỊCH VỤ KHÁCH HÀNG</a>
           </li>
           <li class="menu-hidden__content--item  submenu-hidden__item ">
-            <a href="">NGHỀ NGHIỆP</a>
+            <a href="./goback.php">NGHỀ NGHIỆP</a>
           </li>
         </ul>
         <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
@@ -244,32 +244,32 @@
                 <ul class="sub-menu__list">
                   <li class="sub-menu__item sub-menu__item-coffee">
                     <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                    <a class="sub-menu__item--link animate__animated animate__fadeInUp" href=""> Cà phê </a>
+                    <a class="sub-menu__item--link animate__animated animate__fadeInUp" href="./productList.php"> Cà phê </a>
                     <div class="sub-menu__item--child">
                       <div class="sub-menu__item--child-content">
                         <ul class="sub-menu__item--child-list">
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="" class="sub-menu__item--child-item--link  animate__animated animate__headShake">
+                            <a href="./menuOrder.php" class="sub-menu__item--child-item--link  animate__animated animate__headShake">
                               Cà Phê Phin </a>
                           </li>
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href=""
+                            <a href="./menuOrder.php "
                               class="sub-menu__item--child-item--link animate__animated animate__headShake">PhinDi </a>
                           </li>
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="" class="sub-menu__item--child-item--link animate__animated animate__headShake">Cà
+                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Cà
                               Phê Expresso </a>
                           </li>
                         </ul>
                         <div class="sub-menu__item--child-card">
                           <div class="card-sub-menu">
                             <div class="card">
-                              <a href=""><img src="./home-image/img/z1.jpg" class="card-img-top" alt="..."></a>
+                              <a href="./menuOrder.php "><img src="./home-image/img/z1.jpg" class="card-img-top" alt="..."></a>
                               <div class="card-body">
-                                <a href="">
+                                <a href="./menuOrder.php ">
                                   <p class="card-text">Phin Sữa Đá Đậm Đà Chất Phin! <br> 29000đ</p>
                                 </a>
                               </div>
@@ -281,20 +281,20 @@
                   </li>
                   <li class="sub-menu__item sub-menu__item-freeze">
                     <i class="fas fa-caret-right sub-menu__item--icon"></i><a
-                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="./menuOrder.html">
+                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="./menuOrder.php ./menuOrder.php">
                       Freeze</a>
                     <div class="sub-menu__item--child">
                       <div class="sub-menu__item--child-content">
                         <ul class="sub-menu__item--child-list">
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href=""
+                            <a href="./menuOrder.php "
                               class="sub-menu__item--child-item--link  animate__animated animate__headShake">Freeze cà
                               phê phin</a>
                           </li>
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href=""
+                            <a href="./menuOrder.php "
                               class="sub-menu__item--child-item--link animate__animated animate__headShake">Freeze không
                               cà phê </a>
                           </li>
@@ -302,9 +302,9 @@
                         <div class="sub-menu__item--child-card">
                           <div class="card-sub-menu">
                             <div class="card">
-                              <a href=""><img src="./home-image/img/frezzer.jpg" class="card-img-top" alt="..."></a>
+                              <a href="./menuOrder.php "><img src="./home-image/img/frezzer.jpg" class="card-img-top" alt="..."></a>
                               <div class="card-body">
-                                <a href="">
+                                <a href="./menuOrder.php ">
                                   <p class="card-text">Trà xanh thần thánh<br>
                                     39000đ</p>
                                 </a>
@@ -317,37 +317,37 @@
                   </li>
                   <li class="sub-menu__item sub-menu__item-tea">
                     <i class="fas fa-caret-right sub-menu__item--icon"></i><a
-                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="javascript:;"> Trà </a>
+                      class="sub-menu__item--link animate__animated animate__fadeInUp" href=" javascript:;"> Trà </a>
                     <div class="sub-menu__item--child">
                       <div class="sub-menu__item--child-content">
                         <ul class="sub-menu__item--child-list">
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="" class="sub-menu__item--child-item--link  animate__animated animate__headShake">
+                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link  animate__animated animate__headShake">
                               Trà sen vàng </a>
                           </li>
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="" class="sub-menu__item--child-item--link animate__animated animate__headShake">Trà
+                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Trà
                               thạch đào </a>
                           </li>
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="" class="sub-menu__item--child-item--link animate__animated animate__headShake">Trà
+                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Trà
                               thanh đào </a>
                           </li>
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="" class="sub-menu__item--child-item--link animate__animated animate__headShake">Trà
+                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Trà
                               thạch vải </a>
                           </li>
                         </ul>
                         <div class="sub-menu__item--child-card">
                           <div class="card-sub-menu">
                             <div class="card">
-                              <a href=""><img src="./home-image/img/tea.jpg" class="card-img-top" alt="..."></a>
+                              <a href="./menuOrder.php "><img src="./home-image/img/tea.jpg" class="card-img-top" alt="..."></a>
                               <div class="card-body">
-                                <a href="">
+                                <a href="./menuOrder.php ">
                                   <p class="card-text">Thả ga giải khát với các lại trà<br> 39000đ</p>
                                 </a>
                               </div>
@@ -359,37 +359,37 @@
                   </li>
                   <li class="sub-menu__item sub-menu__item-bakery">
                     <i class="fas fa-caret-right sub-menu__item--icon"></i><a
-                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="javascript:;"> Bánh mì </a>
+                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="./menuOrder.php javascript:;"> Bánh mì </a>
                     <div class="sub-menu__item--child">
                       <div class="sub-menu__item--child-content">
                         <ul class="sub-menu__item--child-list">
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="" class="sub-menu__item--child-item--link  animate__animated animate__headShake">
+                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link  animate__animated animate__headShake">
                               Thịt nướng </a>
                           </li>
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="" class="sub-menu__item--child-item--link animate__animated animate__headShake">Xíu
+                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Xíu
                               mại</a>
                           </li>
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="" class="sub-menu__item--child-item--link animate__animated animate__headShake">Chả
+                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Chả
                               lụa xá xíu </a>
                           </li>
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="" class="sub-menu__item--child-item--link animate__animated animate__headShake">Gà
+                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Gà
                               xé nước tương </a>
                           </li>
                         </ul>
                         <div class="sub-menu__item--child-card">
                           <div class="card-sub-menu">
                             <div class="card">
-                              <a href=""><img src="./home-image/img/bakery.jpg" class="card-img-top" alt="..."></a>
+                              <a href="./menuOrder.php "><img src="./home-image/img/bakery.jpg" class="card-img-top" alt="..."></a>
                               <div class="card-body">
-                                <a href="">
+                                <a href="./menuOrder.php ">
                                   <p class="card-text">Không lo buổi sáng với bánh mì<br> 29000đ</p>
                                 </a>
                               </div>
@@ -401,29 +401,29 @@
                   </li>
                   <li class="sub-menu__item sub-menu__item-order">
                     <i class="fas fa-caret-right sub-menu__item--icon"></i><a
-                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="javascript:;"> Khác</a>
+                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="./menuOrder.php javascript:;"> Khác</a>
                     <div class="sub-menu__item--child">
                       <div class="sub-menu__item--child-content">
                         <ul class="sub-menu__item--child-list">
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href=""
+                            <a href="./menuOrder.php "
                               class="sub-menu__item--child-item--link  animate__animated animate__headShake">Bánh
                               ngọt</a>
                           </li>
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href=""
+                            <a href="./menuOrder.php "
                               class="sub-menu__item--child-item--link animate__animated animate__headShake">Marchandise</a>
                           </li>
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="" class="sub-menu__item--child-item--link animate__animated animate__headShake">Cà
+                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Cà
                               phê đống gói </a>
                           </li>
                           <li class="sub-menu__item--child-item">
                             <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href=""
+                            <a href="./menuOrder.php "
                               class="sub-menu__item--child-item--link animate__animated animate__headShake">Thực đơn
                               giao hàng </a>
                           </li>
@@ -431,9 +431,9 @@
                         <div class="sub-menu__item--child-card">
                           <div class="card-sub-menu">
                             <div class="card">
-                              <a href=""><img src="./home-image/img/order.jpeg" class="card-img-top" alt="..."></a>
+                              <a href="./menuOrder.php "><img src="./home-image/img/order.jpeg" class="card-img-top" alt="..."></a>
                               <div class="card-body">
-                                <a href="">
+                                <a href="./menuOrder.php ">
                                   <p class="card-text">Rất nhiều sản phẩm khác phục vụ khách hàng</p>
                                 </a>
                               </div>
@@ -462,9 +462,9 @@
                         <div class="sub-menu__item--child-card">
                           <div class="card-sub-menu">
                             <div class="card">
-                              <a href=""><img src="./home-image/img/Thumbnail.jpg" class="card-img-top" alt="..."></a>
+                              <a href="./news-1.php"><img src="./home-image/img/Thumbnail.jpg" class="card-img-top" alt="..."></a>
                               <div class="card-body">
-                                <a href="">
+                                <a href="./news-1.php">
                                   <p class="card-text">Tự hào sinh ra từ đất việt,1999!</p>
                                 </a>
                               </div>
@@ -485,9 +485,9 @@
                         <div class="sub-menu__item--child-card">
                           <div class="card-sub-menu">
                             <div class="card">
-                              <a href=""><img src="./home-image/img/discount.png" class="card-img-top" alt="..."></a>
+                              <a href="news-1.php"><img src="./home-image/img/discount.png" class="card-img-top" alt="..."></a>
                               <div class="card-body">
-                                <a href="">
+                                <a href="news-1.php">
                                   <p class="card-text">Chương trình khuyến mãi chỉ từ<br>
                                     29000đ</p>
                                 </a>
@@ -519,10 +519,10 @@
                         <div class="sub-menu__item--child-card">
                           <div class="card-sub-menu">
                             <div class="card">
-                              <a href=""><img src="./home-image/img/ABOUT-ORIGIN.png" class="card-img-top"
+                              <a href="./goback.php"><img src="./home-image/img/ABOUT-ORIGIN.png" class="card-img-top"
                                   alt="..."></a>
                               <div class="card-body">
-                                <a href="">
+                                <a href="./goback.php">
                                   <p class="card-text">Thương hiệu bắt nguồn từ cà phê việt!</p>
                                 </a>
                               </div>
@@ -542,10 +542,10 @@
                         <div class="sub-menu__item--child-card">
                           <div class="card-sub-menu">
                             <div class="card">
-                              <a href=""><img src="./home-image/img/ABOUT-ORIGIN.png" class="card-img-top"
+                              <a href="./goback.php"><img src="./home-image/img/ABOUT-ORIGIN.png" class="card-img-top"
                                   alt="..."></a>
                               <div class="card-body">
-                                <a href="">
+                                <a href="./goback.php">
                                   <p class="card-text">Thương hiệu bắt nguồn từ cà phê việt!</p>
                                 </a>
                               </div>
@@ -565,10 +565,10 @@
                         <div class="sub-menu__item--child-card">
                           <div class="card-sub-menu">
                             <div class="card">
-                              <a href=""><img src="./home-image/img/ABOUT-ORIGIN.png" class="card-img-top"
+                              <a href="./goback.php"><img src="./home-image/img/ABOUT-ORIGIN.png" class="card-img-top"
                                   alt="..."></a>
                               <div class="card-body">
-                                <a href="">
+                                <a href="./goback.php">
                                   <p class="card-text">Thương hiệu bắt nguồn từ cà phê việt!</p>
                                 </a>
                               </div>
