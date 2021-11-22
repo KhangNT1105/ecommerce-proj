@@ -28,15 +28,16 @@ $_SESSION['submit_login'] = $username;
         </div>
 
         <div class="signIn">
+            <a href="./dashboard/signIn.php">Đăng nhập với tư cách quản trị viên.</a>
             <form action="./userAccount.php" method="post" id="form-sign-in">
                 <div class="formGroup">
-                    <input type="email" name="email_login" id="email" placeholder=" "> 
+                    <input type="email" name="email_login" id="email" placeholder=" ">
                     <label for="email" class="form__label">Email</label>
                     <span class="errorMess"></span>
                 </div>
 
                 <div class="formGroup">
-                    <input type="password" name="password_login" id="password" placeholder=" "> 
+                    <input type="password" name="password_login" id="password" placeholder=" ">
                     <label for="password" class="form__label">Mật khẩu</label>
                     <span class="errorMess"></span>
                 </div>
