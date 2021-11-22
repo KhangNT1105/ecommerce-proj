@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,7 +60,7 @@ session_start();
           </div>
           <div class="form-control__info-user">
             <label for="">Địa chỉ email</label>
-            <input type="email" value="<?php echo $_POST['email_login']; ?>"><br>
+            <input type="email" value="<?php echo $_POST['email_login']??""; ?>"><br>
           </div>
 
           <div class="form-control__info-user">
@@ -157,7 +155,7 @@ session_start();
           </div>
           <div class="form-control__info-user">
             <label for="">Đổi mật khẩu</label>
-            <input type="password" value="<?php echo $_POST['password_login']; ?>" ><br/>
+            <input type="password" value="<?php echo $_POST['password_login']??""; ?>" ><br/>
           </div>
           <div class="form-control__info-user--gender">
             

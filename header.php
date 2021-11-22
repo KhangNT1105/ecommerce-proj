@@ -1,6 +1,6 @@
 <?php
   session_start();
-  $UserN=$_SESSION["user_name_user"];
+  $UserN=$_SESSION["user_name_user"]??"";
 ?>
 
 <head>
@@ -197,7 +197,7 @@
   <header id="header">
     <div class="container wapper-header">
       <div class="container-logo-left">
-        <a class="container-logo-left__link" href="./index.html">
+        <a class="container-logo-left__link" href="./index.php">
           <img class="container-logo-left__link--img" src="./home-image/img/1200px-Highlands_Coffee_logo.svg.png"
             alt="logo" />
         </a>
