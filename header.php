@@ -1,3 +1,8 @@
+<?php
+  session_start();
+  $UserN=$_SESSION["user_name_user"];
+?>
+
 <head>
  <!-- Bootstrap CSS -->
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -235,11 +240,24 @@
             <a href="" class="header-language-link-en"><img src="./home-image/img/flag-en.jpg" alt="" />
             </a>
           </div>
-          <?php include 'login.php'; ?>
-          <!-- <?php include 'currentLogin.php'; ?> -->
-          
 
-        
+          <?php
+            if(isset( $_SESSION["user_name_user"])) {
+              echo "Hello, " . $_SESSION["user_name_user"];
+               include 'currentLogin.php';
+            } else {
+              ?>
+              <div class="header-signup">
+                <a href="./signIn.php" class="header-signup__link"><span> ĐĂNG NHẬP </span></a>
+                <a href="./signUp.php" class="header-signup__link-register"><span> ĐĂNG KÍ</span> </a>
+              </div>
+              <?php
+            }
+          ?>
+
+
+
+
         </div>
         <nav class="nav-bar">
           <ul class="nav-bar__list">
@@ -687,7 +705,7 @@
         </div>
       </div>
     </div>
-    
+
   </header>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

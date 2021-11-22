@@ -1,8 +1,6 @@
 <?php
 session_start();
-$username = $_POST['email_login'] ?? '';
-$password = $_POST['password_login'] ?? '';
-$_SESSION['submit_login'] = $username;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +27,7 @@ $_SESSION['submit_login'] = $username;
 
         <div class="signIn">
             <a href="./dashboard/signIn.php">Đăng nhập với tư cách quản trị viên.</a>
-            <form action="./userAccount.php" method="post" id="form-sign-in">
+            <form action="./signIn-Handle-user.php" method="post" id="form-sign-in">
                 <div class="formGroup">
                     <input type="email" name="email_login" id="email" placeholder=" ">
                     <label for="email" class="form__label">Email</label>
