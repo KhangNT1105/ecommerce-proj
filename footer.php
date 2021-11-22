@@ -24,7 +24,7 @@
         <div class="footer__contact--mail">
           <a href="">
             <i class="fas fa-envelope-square"></i>
-            customerservice@highlandscoffee.com.vn
+           lachongduy@gmail.com
           </a>
         </div>
       </div>
@@ -63,7 +63,7 @@
         <div class="footer__contact--mail">
           <a href="">
             <i class="fas fa-envelope-square"></i>
-            customerservice@highlandscoffee.com.vn
+            lachongduy@gmail.com
           </a>
         </div>
       </div>
