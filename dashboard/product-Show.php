@@ -1,5 +1,33 @@
             <?php
-               include './product-Value.php'
+              //  include './product-Value.php';
+               include './config.php';
+                $sql ='select * from users';
+                $objStatement =$objPDO->prepare($sql);
+                $arr =[];
+                $objStatement->execute($arr);
+                $dataUsers = $objStatement->fetchAll(PDO::FETCH_ASSOC);
+
+
+                $sql ='select * from product_categories';
+                $objStatement =$objPDO->prepare($sql);
+                $arr =[];
+                $objStatement->execute($arr);
+                $dataLoais = $objStatement->fetchAll(PDO::FETCH_ASSOC);
+                // 2. tao sql
+                $sql="select * from products ";
+                //.prepare sql
+
+                $objStatement =$objPDO->prepare($sql);
+                $arr =[];
+
+                //thuc thi sql
+                $objStatement->execute($arr);
+                //giai quyet ket qua
+
+                $n = $objStatement->rowCount();//so dong
+                //echo "Ket qua co $n dong";
+                $dataproducts = $objStatement->fetchAll(PDO::FETCH_ASSOC);
+                //echo '<pre>'; print_r($dataSach); exit;
             ?>
             <table class = "table table-striped table-advance table-hover">
               <tr>
@@ -12,22 +40,42 @@
                 <th></th>
             </tr>
             <?php
-              foreach($ListDMSP as $key => $value){
+              foreach($dataproducts as $key => $value){
                 ?>
                 <!-- echo "{$key}<br/>";
                 echo "{$value['id']}<br/>";
                 echo "{$value['date_created']}<br/>"; -->
                 <tr>
-                  <td> <?php echo $value['created_by' ]?> </td>
+                  <td>
+                    <?php
+                     foreach($dataUsers as $user) {
+                       if($value['created_by' ] == $user['user_id']) {
+                         echo $user['fullname'];
+                       }
+                     }
+                      ?>
+                 </td>
                   <td> <?php echo $value['product_id' ]?> </td>
                   <td> <?php echo $value['product_name' ]?> </td>
-                  <td> <?php echo $value['name_product_Category' ]?> </td>
-                  <td> <?php echo $value['status' ]?> </td>
-                  <td> <?php echo $value['date_created' ]?> </td>
                   <td>
-                    <form action="./product-HandleUpdateAndDelete.php" method="POST">
+                     <?php
+                     foreach($dataLoais as $loai) {
+                       if($value['pro_cate_id' ] == $loai['pro_cate_id']) {
+                         echo $loai['pro_cate_name'];
+                       }
+                     }
+                      ?>
+                  </td>
+                  <td> <?php echo $value['status' ]?> </td>
+                  <td> <?php echo $value['created_at' ]?> </td>
+                  <td>
+                    <form action="./product-Update.php" method="POST">
                       <button class="btn btn-theme"type="submit" name="btnUpdate" value="<?php echo $value['product_id']?>">Cập nhật
                       </button>
+
+                    </form>
+                    <form action="./product-HandleDelete.php" method="POST">
+
                       <button class="btn btn-theme"type="submit" name="btnDelete" value="<?php echo $value['product_id']?>">Xóa
                       </button>
                     </form>
@@ -43,43 +91,59 @@
             <div class="form-panel" style="display: none" >
               <h4 class="mb" style="font-weight:bold" ><i class="fa fa-angle-right"></i> Chỉnh sửa thông tin</h4>
               <form class="form-horizontal style-form " method="POST" action="./product-Add.php">
-                <div class="form-group">
+                <!-- <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">Mã sản phẩm</label>
                   <div class="col-sm-10">
                     <input type="text" class="form-control"
-                    name="edit-id-product"
+                    name="product_id"
                     placeholder="Bắt buộc nhập....">
                   </div>
-                </div>
+                </div> -->
                 <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">Tên sản phẩm</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" name="edit-name-product"
+                    <input type="text" class="form-control" name="product_name"
                     placeholder="Bắt buộc nhập....">
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">Tên danh mục sản phẩm</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control">
+                     <select name="pro_cate_id" id="" class="form-control">
+                      <?php foreach($dataLoais as $r)
+                                {
+                                    ?>
+                                    <option value="<?php echo $r['pro_cate_id'] ?>"><?php echo $r['pro_cate_name'] ?></option>
+                                    <?php
+                                }
+                                ?>
+                    </select>
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">Tình trạng</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="status">
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">Ngày tạo</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name ="created_at">
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">Người tạo</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control">
+                     <select name="created_by" id="" class="form-control">
+                      <?php foreach($dataUsers as $r)
+                                {
+                                    ?>
+                                    <option value="<?php echo $r['user_id'] ?>"><?php echo $r['fullname'] ?></option>
+                                    <?php
+                                }
+                                ?>
+                    </select>
                   </div>
                 </div>
 
