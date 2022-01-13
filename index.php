@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <title>Highlands Coffee</title>
   <!-- Required meta tags -->

@@ -1,3 +1,14 @@
+<?php 
+include './class/member_class.php';
+$member = new Member();
+    $show_member = $member -> show_member();
+      if($show_member){$result = $show_member ->fetch_assoc();}
+    if ($result['id']){
+    $id =$result['id'] ;
+    $get_member = $member -> get_member($id);
+    if($get_member){$resul = $get_member ->fetch_assoc();}
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,10 +56,10 @@
       <p class="container myorder-text">Thông tin tài khoản</p>
       <div class="container">
         <p>Thông tin cá nhân</p>
-        <form class="form-group-changes" action="" method="post">
+        <form class="form-group-changes" action="handleUpdateAcount.php" method="post">
           <div class="form-control__info-user">
             <label for="">Họ & Tên</label>
-            <input type="text"> <br>
+            <input type="text" value ="<?php echo $resul['username'] ?>"> <br>
           </div>
           <div class="form-control__info-user">
             <label for="">Nickname</label>
@@ -56,11 +67,11 @@
           </div>
           <div class="form-control__info-user">
             <label for="">Số điện thoại</label>
-            <input type="text"> <br>
+            <input type="text" value ="<?php echo $resul['phone'] ?>" > <br>
           </div>
           <div class="form-control__info-user">
             <label for="">Địa chỉ email</label>
-            <input type="email" value="<?php echo $_POST['email_login']??""; ?>"><br>
+            <input type="email" value ="<?php echo $resul['email'] ?>"><br>
           </div>
 
           <div class="form-control__info-user">
@@ -68,94 +79,43 @@
             <div class="datepicker">
               <select name="day" id="days">
                 <option value="0">Ngày</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
+                <?php 
+                for($i= 1 ; $i <= 31 ; $i++) {
+                ?>
+                <option value=<?php echo $i; ?>><?php echo $i; ?></option>
+                <?php 
+                }
+                ?>
               </select>
               <select name="month" id="months">
                 <option value="0">Tháng</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
+                <?php 
+                for($i= 1 ; $i <= 12 ; $i++) {
+                ?>
+                <option value=<?php echo $i; ?>><?php echo $i; ?></option>
+                <?php 
+                }
+                ?>
               </select>
               <select name="year" id="years">
                 <option value="0">Năm</option>
-                <option value="1">1990</option>
-                <option value="2">1991</option>
-                <option value="3">1992</option>
-                <option value="4">1993</option>
-                <option value="5">1994</option>
-                <option value="6">1995</option>
-                <option value="7">1996</option>
-                <option value="8">1997</option>
-                <option value="9">1998</option>
-                <option value="10">1999</option>
-                <option value="11">2000</option>
-                <option value="12">2001</option>
-                <option value="13">2002</option>
-                <option value="14">2003</option>
-                <option value="15">2004</option>
-                <option value="16">2005</option>
-                <option value="17">2006</option>
-                <option value="18">2007</option>
-                <option value="19">2008</option>
-                <option value="20">2009</option>
-                <option value="21">2010</option>
-                <option value="22">2011</option>
-                <option value="23">2012</option>
-                <option value="24">2013</option>
-                <option value="25">2014</option>
-                <option value="26">2015</option>
-                <option value="27">2016</option>
-                <option value="28">2017</option>
-                <option value="29">2018</option>
-                <option value="30">2019</option>
-                <option value="31">2020</option>
-                <option value="32">2021</option>
+                <?php 
+                for($i= 1950 ; $i <= 2021 ; $i++) {
+                ?>
+                <option value=<?php echo $i; ?>><?php echo $i; ?></option>
+                <?php 
+                }
+                ?>
               </select>
-
             </div>
           </div>
           <div class="form-control__info-user">
-            <label for="">Đổi mật khẩu</label>
-            <input type="password" value="<?php echo $_POST['password_login']??""; ?>" ><br/>
+            <label for="">Mật khẩu hiện tại</label>
+            <input type="text" value ="<?php  echo md5($resul['password']) ?>" ><br/>
+          </div>
+          <div class="form-control__info-user">
+            <label for="">Mật khẩu mới</label>
+            <input type="password" value="" ><br/>
           </div>
           <div class="form-control__info-user--gender">
             

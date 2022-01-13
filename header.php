@@ -1,7 +1,13 @@
 <?php
-  session_start();
-  $UserN=$_SESSION["user_name_user"]??"";
+session_start();
 ?>
+<?php 
+    require_once './class/member_class.php';
+    $member = new Member();
+    $show_member = $member -> show_member();
+    if($show_member){$result = $show_member ->fetch_assoc();}
+?>
+
 
 <head>
  <!-- Bootstrap CSS -->
@@ -197,7 +203,7 @@
   <header id="header">
     <div class="container wapper-header">
       <div class="container-logo-left">
-        <a class="container-logo-left__link" href="./index.html">
+        <a class="container-logo-left__link" href="./index.php">
           <img class="container-logo-left__link--img" src="./home-image/img/1200px-Highlands_Coffee_logo.svg.png"
             alt="logo" />
         </a>
@@ -217,17 +223,35 @@
           </div>
 
           <?php
-            if(isset( $_SESSION["user_name_user"])) {
-              echo "Hello, " . $_SESSION["user_name_user"];
-               include 'currentLogin.php';
-            } else {
-              ?>
-              <div class="header-signup">
-                <a href="./signIn.php" class="header-signup__link"><span> ĐĂNG NHẬP </span></a>
-                <a href="./signUp.php" class="header-signup__link-register"><span> ĐĂNG KÍ</span> </a>
+            if(isset($_SESSION['username'])){
+              echo '<div class="user-info">
+              <a class="user-info__link" href="">
+                <i class="far fa-user user-info__link--icon"></i>
+                <i class="fas fa-sort-down user-info__link--icon"></i>
+              </a>
+              <div class="subuser-info">
+                <a class="subuser-info__link" href="#">
+                  <p>Chào : '.$_SESSION['username'].'</p>
+                </a>
+                <a class="subuser-info__link" href="./userInfo.php">
+                  <p>Đơn hàng của tôi</p>
+                </a>
+                <a class="subuser-info__link" href="userAccount.php?userId='.$result['id'].'">
+                  <p>Tài khoản của tôi</p>
+                </a>
+                <a class="subuser-info__link" href="./logout-Handle-User.php">
+                  <p>Đăng xuất</p>
+                </a>
               </div>
-              <?php
-            }
+            </div>';
+              
+          }
+          else{
+              echo '<div class="header-signup">
+              <a href="./signIn.php" class="header-signup__link"><span> ĐĂNG NHẬP </span></a>
+              <a href="./signUp.php" class="header-signup__link-register"><span> ĐĂNG KÍ</span> </a>
+            </div>';
+          }
           ?>
 
 
@@ -281,7 +305,7 @@
                   </li>
                   <li class="sub-menu__item sub-menu__item-freeze">
                     <i class="fas fa-caret-right sub-menu__item--icon"></i><a
-                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="./menuOrder.php ./menuOrder.php">
+                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="./menuOrder.php">
                       Freeze</a>
                     <div class="sub-menu__item--child">
                       <div class="sub-menu__item--child-content">
