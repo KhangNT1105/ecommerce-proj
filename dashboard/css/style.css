@@ -1214,8 +1214,29 @@ PANELS CONFIGURATIONS
 	width: 80%;
 }
 .message-p .form-inline .form-control {
-	width: 100%
+	width:100%;
+    
 }
+
+
+.description
+{
+    width:100%;
+    white-space: pre-wrap; 
+    overflow: hidden; 
+    
+    text-overflow: ellipsis; 
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+}
+
+
+
+
+
+
+
 
 /*Twitter Panel*/
 .twitter-panel {
