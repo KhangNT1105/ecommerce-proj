@@ -14,9 +14,9 @@
 </head>
 
 <?php
-include './header.php';
-include './config/constants.php';
-include './config/Db.php';
+include_once './header.php';
+include_once './config/constants.php';
+include_once './config/Db.php';
 $id = isset($_GET["id"]) ? $_GET["id"]  : null;
 if ($id == null) {
     die();

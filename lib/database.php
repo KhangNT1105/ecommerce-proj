@@ -1,5 +1,5 @@
 <?php
-include './config/constants.php';
+include_once './config/constants.php';
 Class Database{
     public $host   = HOST;
     public $user   = USER;

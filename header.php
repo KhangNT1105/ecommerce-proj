@@ -1,5 +1,5 @@
 <?php
-  include './config/config.php';
+  include_once './config/config.php';
   session_start();
   $UserN=$_SESSION["user_name_user"]??"";
   $cateSql="select * from product_categories";

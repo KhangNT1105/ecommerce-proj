@@ -1,5 +1,5 @@
 <?php
-require "./config/constants.php";
+// require_once "./config/constants.php";
 
 class Database
 {
