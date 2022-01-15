@@ -16,10 +16,12 @@ if (isset($_POST['submit_login']))
             echo '<script language="javascript">alert("Vui lòng nhập đủ thông tin tài khoản và mật khẩu!"); window.location="signIn.php";</script>';
         exit;
         }
+        echo "password $password ";
+
         // mã hóa pasword
         $password = md5($password);
         //Kiểm tra tên đăng nhập có tồn tại không
-        $query = "SELECT username, password FROM tbl_member WHERE username='$username' AND password='$password'";
+        $query = "SELECT username, password FROM users WHERE username='$username' AND password='$password'";
         $result = mysqli_query($connect, $query) or die( mysqli_error($connect));
         $row = mysqli_fetch_array($result);
         if (isset($row['username']) == $username && $row['password'] == $password) {
@@ -28,9 +30,9 @@ if (isset($_POST['submit_login']))
             echo "Xin chào <b>" .$username;
             die();
             $connect->close(); 
-        } else {
-            echo '<script language="javascript">alert("Đăng nhập không thành công. Vui lòng kiểm tra lại tài khoản và mật khẩu!"); window.location="signIn.php";</script>';
-        }
+        } 
+        echo "after md5 $password ";
+        echo "username: $username ";
  //Lưu tên đăng nhập
 
 }

@@ -26,7 +26,7 @@ array_push($errors, "Two password do not match");
 }
 
 // Kiểm tra username hoặc email có bị trùng hay không
-$sql = "SELECT * FROM tbl_member WHERE username = '$username' OR email = '$email'";
+$sql = "SELECT * FROM users WHERE username = '$username' OR email = '$email'";
 
 // Thực thi câu truy vấn
 $result = mysqli_query($conn, $sql);
@@ -40,14 +40,14 @@ echo '<script language="javascript">alert("Bị trùng tên hoặc địa chỉ 
 die ();
 }
 else {
-$sql = "INSERT INTO tbl_member (username, password, email, phone) VALUES ('$username','$password','$email','$phone')";
-echo '<script language="javascript">alert("Đăng ký thành công!"); window.location="signIn.php";</script>';
-
+$sql = "INSERT INTO users (username, password, email, phone) VALUES ('$username','$password','$email','$phone')";
+// echo "password: $password";
 if (mysqli_query($conn, $sql)){
 echo "Tên đăng nhập: ".$_POST['username']."<br/>";
 echo "Mật khẩu: " .$_POST['password']."<br/>";
 echo "Email đăng nhập: ".$_POST['email']."<br/>";
 echo "Số điện thoại: ".$_POST['phone']."<br/>";
+echo '<script language="javascript">alert("Đăng ký thành công!"); window.location="signIn.php";</script>';
 }
 else {
 echo '<script language="javascript">alert("Có lỗi trong quá trình xử lý"); window.location="register.php";</script>';

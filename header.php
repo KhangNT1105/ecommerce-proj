@@ -176,7 +176,7 @@
                 <a class="subuser-info__link" href="./userInfo.php">
                   <p>Đơn hàng của tôi</p>
                 </a>
-                <a class="subuser-info__link" href="userAccount.php?userId='.$result['id'].'">
+                <a class="subuser-info__link" href="userAccount.php?userId='.$result['user_id'].'">
                   <p>Tài khoản của tôi</p>
                 </a>
                 <a class="subuser-info__link" href="./logout-Handle-User.php">

@@ -3,8 +3,8 @@ include './class/member_class.php';
 $member = new Member();
     $show_member = $member -> show_member();
       if($show_member){$result = $show_member ->fetch_assoc();}
-    if ($result['id']){
-    $id =$result['id'] ;
+    if ($result['user_id']){
+    $id =$result['user_id'] ;
     $get_member = $member -> get_member($id);
     if($get_member){$resul = $get_member ->fetch_assoc();}
     }
