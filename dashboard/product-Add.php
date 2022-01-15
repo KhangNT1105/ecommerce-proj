@@ -18,7 +18,6 @@ $sql = "INSERT INTO products ( product_id, product_name, pro_cate_id,status, cre
 $arr=[$m,$t,$ml,$tt,$nt,$ngt,$pp,$pd];
 
 
-// exit();
 $stm = $objPDO->prepare($sql);
 $stm ->execute($arr);
 

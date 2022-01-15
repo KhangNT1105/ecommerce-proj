@@ -1,28 +1,37 @@
 <?php
+include './config.php';
+$sql = "SELECT * FROM posts";
+$stm = $objPDO->prepare($sql);
+$stm ->execute();
+$dataPosts = $stm->fetchAll(PDO::FETCH_ASSOC);
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ecommerce";
- 
-// tạo connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-$sql = "SELECT * FROM posts ORDER BY post_id DESC";
-$result =  mysqli_query(  $conn, $sql );
+$sql2 = "SELECT * FROM post_categories";
+$stm2 = $objPDO->prepare($sql2);
+$stm2 ->execute();
+$dataPostCategories = $stm2->fetchAll(PDO::FETCH_ASSOC);
+
+$sql3 ='select * from users';
+$objStatement2 =$objPDO->prepare($sql3);
+$objStatement2->execute();
+$dataUsers = $objStatement2->fetchAll(PDO::FETCH_ASSOC);
 
 
 //them
 if (isset($_POST['submit'])) {
-  $brand_id = $_POST['post_id'];
-  $brand_name = $_POST['post_name'];
-  $description = $_POST['post_description'];
-  $author = $_POST['author'];
-  $created_at = $_POST['create_at'];
-  $img = $_FILES['img']['name'];
+  // $brand_id = $_POST['post_id'];
+  // $brand_name = $_POST['post_name'];
+  // $description = $_POST['post_description'];
+  // $author = $_POST['author'];
+  // $created_at = $_POST['create_at'];
+  // $img = $_FILES['img']['name'];
 
-  $sql = "INSERT INTO posts (post_id, post_name,post_description, ?, author, create_at, img) VALUES ( '$brand_id', '$brand_name', '$description', ? ,'$author','$created_at',   '$img')";
-  $query = mysqli_query($conn, $sql);
-   header("location: postManagement.php");
+  // $sql = "INSERT INTO posts (post_id, post_name,post_description, author, create_at, img) VALUES ( '$brand_id', '$brand_name', '$description','$author','$created_at','$img')";
+  // $stm = $objPDO->prepare($sql);
+  // $stm->execute();
+
+  // $query = mysqli_query($conn, $sql);
+  //  header("location: postManagement.php");
+  echo "brand $brand_id ";
 }
 
 
@@ -42,7 +51,7 @@ if (isset($_POST['submit'])) {
                 
             </tr>
             <?php
-              while($row = mysqli_fetch_assoc($result))
+              foreach($dataPosts as $key => $row)
               { 
 
 
@@ -80,7 +89,7 @@ if (isset($_POST['submit'])) {
             </button>
             <div class="form-panel" style="display: none" >
               <h4 class="mb" style="font-weight:bold" ><i class="fa fa-angle-right"></i> Thêm thông tin</h4>
-              <form class="form-horizontal style-form " method="POST" enctype="multipart/form-data">
+              <form class="form-horizontal style-form " action="post-Add.php" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">Mã bài viết</label>
                   <div class="col-sm-10">
@@ -109,6 +118,20 @@ if (isset($_POST['submit'])) {
                     <input type="date" class="form-control" name="create_at">
                   </div>
                 </div>
+                <div class="form-group">
+                  <label class="col-sm-2 col-sm-2 control-label">Tên danh mục bài viết</label>
+                  <div class="col-sm-10">
+                     <select name="post_cate_id" id="" class="form-control">
+                      <?php foreach($dataPostCategories as $r)
+                                {
+                                    ?>
+                                    <option value="<?php echo $r['post_cate_id'] ?>"><?php echo $r['post_cate_name'] ?></option>
+                                    <?php
+                                }
+                                ?>
+                    </select>
+                  </div>
+                </div>
                 <!-- <div class="form-group" >
                   <label class="col-sm-2 col-sm-2 control-label">Tác giả</label>
                   <div class="col-sm-10">
@@ -123,7 +146,20 @@ if (isset($_POST['submit'])) {
                   </div>
                   
                 </div>
-                
+                <div class="form-group">
+                  <label class="col-sm-2 col-sm-2 control-label">Người tạo</label>
+                  <div class="col-sm-10">
+                     <select name="author" id="" class="form-control">
+                      <?php foreach($dataUsers as $r)
+                                {
+                                    ?>
+                                    <option value="<?php echo $r['user_id'] ?>"><?php echo $r['fullname'] ?></option>
+                                    <?php
+                                }
+                                ?>
+                    </select>
+                  </div>
+                </div>
 
                 <button class="btn btn-theme width30"type="submit"  >
                     Thêm
