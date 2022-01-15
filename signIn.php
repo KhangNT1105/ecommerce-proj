@@ -28,15 +28,16 @@ $_SESSION['submit_login'] = $username;
         </div>
 
         <div class="signIn">
-            <form action="./userAccount.php" method="post" id="form-sign-in">
+            <a href="./dashboard/signIn.php">Đăng nhập với tư cách quản trị viên.</a>
+            <form action="signIn-Handle-user.php" method="POST"  enctype="multipart/form-data" >
                 <div class="formGroup">
-                    <input type="email" name="email_login" id="email" placeholder=" "> 
-                    <label for="email" class="form__label">Email</label>
+                    <input type="text" name="username" id="username" placeholder=" ">
+                    <label for="Ho" class="form__label">Tên đăng nhập </label>
                     <span class="errorMess"></span>
                 </div>
 
                 <div class="formGroup">
-                    <input type="password" name="password_login" id="password" placeholder=" "> 
+                    <input type="password" name="password" id="password" placeholder=" ">
                     <label for="password" class="form__label">Mật khẩu</label>
                     <span class="errorMess"></span>
                 </div>
@@ -55,7 +56,8 @@ $_SESSION['submit_login'] = $username;
         <div class="signUp--move">
             <h4>Đăng ký thành viên</h4>
             <p>Gia nhập với chúng tôi để có được nhiều ưu đãi hấp dẫn hơn.</p>
-            <h3><a href="./signUp.html">Tham gia</a></h3>
+            <h3><a href="signUp.php">Tham gia</a></h3>
+            <h3><a href="index.php">Về Trang Chủ</a></h3>
         </div>
     </div>
     <script type="text/javascript" src="./js/validator.js"></script>

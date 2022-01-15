@@ -1,3 +1,6 @@
+<?php
+require 'handleRegister.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- link css -->
     <link rel="stylesheet" href="./css/signInUp.css">
 
@@ -25,34 +29,33 @@
         </div>
 
         <div class="signUp">
-            <form action="" method="POST" id="form-sign-up">
+            <form action="signUp.php" method="POST" id="form-sign-up">
                 <h4>Thông tin cá nhân</h4>
                 <div class="formGroup">
-                    <input type="text" name="Ho" id="Ho" placeholder=" "> 
-                    <label for="Ho" class="form__label">Họ</label>
-                    <span class="errorMess"></span>
-                </div>
-
-                <div class="formGroup">
-                    <input type="text" name="Ten" id="Ten" placeholder=" "> 
-                    <label for="Ten" class="form__label">Tên</label>
+                    <input type="text" name="username" required id="Ten" placeholder=" "> 
+                    <label for="Ten" class="form__label">Họ Và Tên</label>
                     <span class="errorMess"></span>
                 </div>
 
                 <h4>Thông tin tài khoản</h4>
                 <div class="formGroup">
-                    <input type="email" name="email" id="email" placeholder=" "> 
+                    <input type="email" name="email" required id="email" placeholder=" "> 
                     <label for="email" class="form__label">Email</label>
                     <span class="errorMess"></span>
                 </div>
 
                 <div class="formGroup">
-                    <input type="password" name="password" id="password" placeholder=" "> 
+                    <input type="password" name="password" required id="password" placeholder=" "> 
                     <label for="password" class="form__label">Mật khẩu</label>
                     <span class="errorMess"></span>
                 </div>
+                <div class="formGroup">
+                    <input type="text" name="phone" id="phone" required placeholder=" "> 
+                    <label for="password" class="form__label">Số điện thoại</label>
+                    <span class="errorMess"></span>
+                </div>
 
-                <h4>Đã có mã giám giá</h4>
+                <!-- <h4>Đã có mã giám giá</h4>
                 <p class="left">Điền vào mã giảm giá mà bạn có.</p>
                 <div class="formGroup">
                     <input type="text" name="CardNumber" id="CardNumber" placeholder=" "> 
@@ -64,7 +67,7 @@
                     <input type="text" name="SecurityCode" id="SecurityCode" placeholder=" "> 
                     <label for="SecurityCode" class="form__label">ID thẻ</label>
                     <span class="errorMess"></span>
-                </div>
+                </div> -->
 
                 <h4>Để nhận thêm nhiều phần quà hấp dẫn khác</h4>
                 <p class="left">Email là nơi mà chúng tôi sẽ gửi thông báo cho bạn.</p>
@@ -84,13 +87,14 @@
                     </label>
                     <span class="errorMess"></span>
                 </div>
-                <button type="submit" id="btn--signUp">Đăng ký</button>
+                <input type="submit" name="submit-register"  id="btn--signUp" value="Submit" />
             </form>
+            <a  href="index.php" class="btn btn-primary mt-4">Về trang chủ</a>
         </div>
     </div>
 
     <script type="text/javascript" src="./js/validator.js"></script>
-    <script>
+    <!-- <script>
         validator({
             form: '#form-sign-up',
             formGroupSelector: '.formGroup',
@@ -116,7 +120,8 @@
             }
         })
 
-    </script>
-
+    </script> -->
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

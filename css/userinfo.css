@@ -34,7 +34,7 @@ table tr:hover {
   margin-bottom: 15px;
 }
 .form-control__info-user label {
-  width: 100px;
+  width: 200px;
   float: left;
   font-weight: normal;
   text-align: left;
