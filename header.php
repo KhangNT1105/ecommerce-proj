@@ -6,6 +6,12 @@
   $objStatementCate =$objPDO->prepare($cateSql);
   $objStatementCate->execute();
   $dataCategories = $objStatementCate->fetchAll(PDO::FETCH_ASSOC);
+
+  $postCateSql="select * from post_categories";
+  $objStatementPostCate =$objPDO->prepare($postCateSql);
+  $objStatementPostCate->execute();
+  $dataPostCategories = $objStatementPostCate->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 <?php 
     require_once './class/member_class.php';
@@ -225,53 +231,18 @@
               </a>
               <div class="sub-menu">
                 <ul class="sub-menu__list">
+                <?php
+                                    foreach($dataPostCategories as $key => $value){
+         ?>
                   <li class="sub-menu__item sub-menu__item-coffee">
                     <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                    <a class="sub-menu__item--link animate__animated animate__fadeInUp " href="">
-                      Tin tức và sự kiện
+                    <a class="sub-menu__item--link animate__animated animate__fadeInUp " href="productNews-Show.php?id=<?php echo $value["post_cate_id"] ?>">
+                      <?php echo $value["post_cate_name"] ?>
                     </a>
-                    <div class="sub-menu__item--child sub-menu__item--child-one-card ">
-                      <div class="sub-menu__item--child-content">
-                        <div class="sub-menu__item--child-card">
-                          <div class="card-sub-menu">
-                            <div class="card">
-                              <a href="./news-1.php"><img src="./home-image/img/Thumbnail.jpg" class="card-img-top" alt="..."></a>
-                              <div class="card-body">
-                                <a href="./news-1.php">
-                                  <p class="card-text">Tự hào sinh ra từ đất việt,1999!</p>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </li>
-                  <li class="sub-menu__item sub-menu__item-freeze">
-                    <i class="fas fa-caret-right sub-menu__item--icon"></i><a
-                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="javascript:;">
-                      Tin khuyến mãi
-                    </a>
-                    <div class="sub-menu__item--child sub-menu__item--child-one-card">
-                      <div class="sub-menu__item--child-content">
-
-                        <div class="sub-menu__item--child-card">
-                          <div class="card-sub-menu">
-                            <div class="card">
-                              <a href="news-1.php"><img src="./home-image/img/discount.png" class="card-img-top" alt="..."></a>
-                              <div class="card-body">
-                                <a href="news-1.php">
-                                  <p class="card-text">Chương trình khuyến mãi chỉ từ<br>
-                                    29000đ</p>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
+         <?php
+         }
+                                ?>  
                 </ul>
               </div>
             </li>
