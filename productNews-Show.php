@@ -1,3 +1,14 @@
+<?php
+  include './config/constants.php';
+  include './config/Db.php';
+  $db=new Db();
+?>
+
+
+<?php
+    include './header.php';
+    include './productNews-Value.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,22 +21,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 </head>
 
-<?php
-              include './header.php'
-            ?>
-<?Php
-include './productNews-Value.php'
-?>
 <div class="container">
     <h1>TIN TỨC & SỰ KIỆN</h1>
     <div class="who" cellspacing="0" cellpadding="0">
         <?php
-        foreach ($ListNews as $key => $value) {
+        $data=$db->selectQuery("select * from posts");
+        foreach ($data as $key => $value) {
         ?>
             <div class="table">
-                <div class="table-"><a href="<?php echo $value['link']?>"><img src="<?php echo  $value['img'] ?>"> </a></div>
-                <div class="table-"><a href="<?php echo $value['link']?>"><b><?php echo $value['product_content'] ?></b></a></div>
-                <div class="table- tabletime"><i class="far fa-calendar"></i><?php echo $value['date_created'] ?></div>
+                <div class="table-"><a href="post.php?id=<?php echo $value['post_id']?>"><img src="./image/<?php echo  $value['img'] ?>"> </a></div>
+                <div class="table-"><a href="post.php?id=<?php echo $value['post_id']?>"><b><?php echo $value['post_name'] ?></b></a></div>
+                <div class="table- tabletime"><i class="far fa-calendar"></i><?php echo $value['created_at'] ?></div>
             </div>
         <?php
         }
@@ -78,6 +84,7 @@ include './productNews-Value.php'
     h1 {
         color: #53382C;
         font-size: 53px;
+        margin-top: 10px;
     }
 </style>
 <?php
