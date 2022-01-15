@@ -1,3 +1,13 @@
+<?php
+               include './config/config.php';
+               $productID =$_GET["id"];
+               $sql="select * from products p left join product_categories pc on pc.pro_cate_id=p.pro_cate_id where p.product_id=$productID";
+                $objStatement =$objPDO->prepare($sql);
+                $objStatement->execute();
+                $dataProduct = $objStatement->fetch();
+      ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -66,7 +76,7 @@
       <div class="menu-order">
         <div class="wrapper-menu-order container">
           <div class="grid-menu-order">
-            <h1>CARAMEL PHIN FREEZE</h1>  
+            <h1><?php echo $dataProduct["product_name"] ?></h1>  
           <div class="menu-order__content">
             <img class="menu-order__content--img" src="./home-imageFreeze/img/png"  alt="">
             <div class="menu-order__content--right">
@@ -89,26 +99,11 @@
                 </div>
               </div>
               <div class="product-price">
-                Giá : <strong id="ext__price"> 49,000 VND </strong> 
+                Giá : <strong id="ext__price"> <?php echo $dataProduct["product_price"] ?> VND </strong> 
               </div>
             </div>
 
           </div>
-          </div>
-          <div class="box-mid">
-            <div class="mid-content">
-              <div class="card card-mid-content" style="width: 260px;">
-                <a href=""><img src="./home-imageFreeze/img/270_crop_CLASSIC-FREEZE.png" class="card-img-top__mid-content" alt=""></a>
-                <div class="card-body card-mid-content--body">
-                  <h3 class="tends">
-                    <a href="">Classic Phin Freeze</a>
-                  </h3>
-                  <div class="product-price">
-                    Giá : <strong id="ext__price"> 49.000 VND </strong> 
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

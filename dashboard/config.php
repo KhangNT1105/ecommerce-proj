@@ -1,3 +1,3 @@
 <?php
-$objPDO = new PDO('mysql:host=localhost;dbname=ecommerce'  ,'root' , '' );
+$objPDO = new PDO('mysql:host=localhost:3307;dbname=ecommerce'  ,'root' , '' );
 $objPDO->query('set names utf8');
