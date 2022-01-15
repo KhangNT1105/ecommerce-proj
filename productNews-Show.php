@@ -1,7 +1,9 @@
 <?php
   include_once './config/constants.php';
   include_once './config/Db.php';
+  $postCateID =$_GET["id"];
   $db=new Db();
+  $postCateData=$db->selectQuery("select * from post_categories where post_cate_id=$postCateID");
 ?>
 
 
@@ -22,10 +24,10 @@
 </head>
 
 <div class="container">
-    <h1>TIN TỨC & SỰ KIỆN</h1>
+    <h1><?php echo $postCateData[0]["post_cate_name"] ?></h1>
     <div class="who" cellspacing="0" cellpadding="0">
         <?php
-        $data=$db->selectQuery("select * from posts");
+        $data=$db->selectQuery("select * from posts where post_cate_id=$postCateID");
         foreach ($data as $key => $value) {
         ?>
             <div class="table">
