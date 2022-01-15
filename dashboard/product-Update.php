@@ -62,6 +62,18 @@ $sql ='select * from users';
                   </div>
                 </div>
                 <div class="form-group">
+                 <label class="col-sm-2 col-sm-2 control-label">Mô tả sản phẩm</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="product_desc" value="<?php echo $t['product_desc']; ?>">
+                  </div>
+                </div>
+                <div class="form-group">
+                 <label class="col-sm-2 col-sm-2 control-label">Giá sản phẩm</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="product_price" value="<?php echo $t['product_price']; ?>">
+                  </div>
+                </div>
+                <div class="form-group">
                   <label class="col-sm-2 col-sm-2 control-label">Tên danh mục sản phẩm</label>
                   <div class="col-sm-10">
                      <select name="pro_cate_id" id="" class="form-control">

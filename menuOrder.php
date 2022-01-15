@@ -81,13 +81,15 @@
             <img class="menu-order__content--img" src="./home-imageFreeze/img/png"  alt="">
             <div class="menu-order__content--right">
               <div class="menu-order__content--right-text">
-                Thơm ngon khó cưỡng! Được kết hợp từ cà phê truyền thống chỉ có tại Highlands Coffee, cùng với caramel, thạch cà phê và đá xay mát lạnh. Trên cùng là lớp kem tươi thơm béo và caramel ngọt ngào. Món nước phù hợp trong những cuộc gặp gỡ bạn bè, bởi sự ngọt ngào thường mang mọi người xích lại gần nhau.
+                <?php
+             echo   $dataProduct["product_desc"]
+                ?>
               </div>
               <div class="product-box">
-                <div class="tille-box">
+                <!-- <div class="tille-box">
                   Size:
-                </div>
-                <div class="content-box">
+                </div> -->
+                <!-- <div class="content-box">
                   <div class="contentbox__size">
                     <ul class="contentbox__size--list">
                       <li class="contentbox__size--item li1"  ><a href="javascript:;" data-id="1" data-price = "49,000 VND">S</a></li>
@@ -96,7 +98,7 @@
                       
                     </ul>
                   </div>
-                </div>
+                </div> -->
               </div>
               <div class="product-price">
                 Giá : <strong id="ext__price"> <?php echo $dataProduct["product_price"] ?> VND </strong> 

@@ -103,6 +103,20 @@
                   <label class="col-sm-2 col-sm-2 control-label">Tên sản phẩm</label>
                   <div class="col-sm-10">
                     <input type="text" class="form-control" name="product_name"
+                    placeholder="Bắt bu��c nhập....">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 col-sm-2 control-label">Mô tả sản phẩm</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="product_desc"
+                    placeholder="Bắt buộc nhập....">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 col-sm-2 control-label">Giá sản phẩm</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="product_price"
                     placeholder="Bắt buộc nhập....">
                   </div>
                 </div>
