@@ -1,5 +1,11 @@
 <?php
-session_start();
+  include './config/config.php';
+  session_start();
+  $UserN=$_SESSION["user_name_user"]??"";
+  $cateSql="select * from product_categories";
+  $objStatementCate =$objPDO->prepare($cateSql);
+  $objStatementCate->execute();
+  $dataCategories = $objStatementCate->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <?php 
     require_once './class/member_class.php';
@@ -86,82 +92,16 @@ session_start();
           <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon  "></i>
         </li>
         <ul class="menu-hidden__content--list submenu-hidden__list">
-          <li class="menu-hidden__content--item  submenu-hidden__item">
-            <a class="" href="./menuOrder.php">CÀ PHÊ</a>
+        <?php
+                                    foreach($dataCategories as $key => $value){
+         ?>
+            <li class="menu-hidden__content--item  submenu-hidden__item">
+            <a class="" href="./productList.php?category=<?php echo $value["pro_cate_id"] ?>"><?php echo $value["pro_cate_name"] ?> </a>
             <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-coffee  "></i>
           </li>
-          <ul class="menu-hidden__content--list submenu submenu-hidden__list--coffee">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="./menuOrder.php">Cà Phê Phin</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="./menuOrder.php">PhinDi</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item">
-              <a href="./menuOrder.php">Cà Phê Expresso</a>
-            </li>
-          </ul>
-          <li class="menu-hidden__content--item  submenu-hidden__item ">
-            <a href="./menuOrder.php">FREEZE</a>
-            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-freeze "></i>
-          </li>
-          <ul class="menu-hidden__content--list submenu submenu-hidden__list--freeze">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="./menuOrder.php">Cà Phê Phin</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="./menuOrder.php">PhinDi</a>
-            </li>
-          </ul>
-          <li class="menu-hidden__content--item  submenu-hidden__item">
-            <a href="./menuOrder.php">TRÀ</a>
-            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-tea "></i>
-          </li>
-          <ul class="menu-hidden__content--list submenu submenu-hidden__list--tea">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="./menuOrder.php">Trà Sen Vàng</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="./menuOrder.php">Trà Thạch Đào</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="./menuOrder.php">Trà Thanh Đào</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="./menuOrder.php">Trà Thạch Vải </a>
-            </li>
-          </ul>
-          <li class="menu-hidden__content--item  submenu-hidden__item">
-            <a href="./menuOrder.php">BÁNH MÌ</a>
-            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-bakery"></i>
-          </li>
-          <ul class="menu-hidden__content--list submenu submenu-hidden__list--bakery">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="./menuOrder.php">Thịt Nướng</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="./menuOrder.php">Xíu Mại</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="./menuOrder.php">Chả Lụa Xá Xíu</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="./menuOrder.php">Gà Xé Nước Tương</a>
-            </li>
-          </ul>
-          <li class="menu-hidden__content--item submenu  submenu-hidden__item">
-            <a href="./menuOrder.php">KHÁC</a>
-            <i class="fas fa-caret-square-right js-menu js-menu-hidden-icon-order"></i>
-          </li>
-          <ul class="menu-hidden__content--list submenu submenu-hidden__list--order">
-            <li class="menu-hidden__content--item  submenu-hidden__item"><a class="" href="./menuOrder.php">Bánh Ngọt</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="./menuOrder.php">Merchandise</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="./menuOrder.php">Cà Phê Đóng Gói</a>
-            </li>
-            <li class="menu-hidden__content--item  submenu-hidden__item ">
-              <a href="./menuOrder.php">Thực Đơn Giao Hàng</a>
-            </li>
-          </ul>
+         <?php
+         }
+                                ?>
         </ul>
         <li class="menu-hidden__content--item animate__animated animate__fadeInRight">
           <a href="">TIN TỨC</a>
@@ -266,207 +206,16 @@ session_start();
               </a>
               <div class="sub-menu">
                 <ul class="sub-menu__list">
-                  <li class="sub-menu__item sub-menu__item-coffee">
+                <?php
+                                    foreach($dataCategories as $key => $value){
+         ?>
+          <li class="sub-menu__item sub-menu__item-coffee">
                     <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                    <a class="sub-menu__item--link animate__animated animate__fadeInUp" href="./productList.php"> Cà phê </a>
-                    <div class="sub-menu__item--child">
-                      <div class="sub-menu__item--child-content">
-                        <ul class="sub-menu__item--child-list">
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php" class="sub-menu__item--child-item--link  animate__animated animate__headShake">
-                              Cà Phê Phin </a>
-                          </li>
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php "
-                              class="sub-menu__item--child-item--link animate__animated animate__headShake">PhinDi </a>
-                          </li>
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Cà
-                              Phê Expresso </a>
-                          </li>
-                        </ul>
-                        <div class="sub-menu__item--child-card">
-                          <div class="card-sub-menu">
-                            <div class="card">
-                              <a href="./menuOrder.php "><img src="./home-image/img/z1.jpg" class="card-img-top" alt="..."></a>
-                              <div class="card-body">
-                                <a href="./menuOrder.php ">
-                                  <p class="card-text">Phin Sữa Đá Đậm Đà Chất Phin! <br> 29000đ</p>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <a class="sub-menu__item--link animate__animated animate__fadeInUp" href="./productList.php?category=<?php echo $value["pro_cate_id"] ?>"> <?php echo $value["pro_cate_name"] ?></a>
                   </li>
-                  <li class="sub-menu__item sub-menu__item-freeze">
-                    <i class="fas fa-caret-right sub-menu__item--icon"></i><a
-                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="./menuOrder.php">
-                      Freeze</a>
-                    <div class="sub-menu__item--child">
-                      <div class="sub-menu__item--child-content">
-                        <ul class="sub-menu__item--child-list">
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php "
-                              class="sub-menu__item--child-item--link  animate__animated animate__headShake">Freeze cà
-                              phê phin</a>
-                          </li>
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php "
-                              class="sub-menu__item--child-item--link animate__animated animate__headShake">Freeze không
-                              cà phê </a>
-                          </li>
-                        </ul>
-                        <div class="sub-menu__item--child-card">
-                          <div class="card-sub-menu">
-                            <div class="card">
-                              <a href="./menuOrder.php "><img src="./home-image/img/frezzer.jpg" class="card-img-top" alt="..."></a>
-                              <div class="card-body">
-                                <a href="./menuOrder.php ">
-                                  <p class="card-text">Trà xanh thần thánh<br>
-                                    39000đ</p>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="sub-menu__item sub-menu__item-tea">
-                    <i class="fas fa-caret-right sub-menu__item--icon"></i><a
-                      class="sub-menu__item--link animate__animated animate__fadeInUp" href=" javascript:;"> Trà </a>
-                    <div class="sub-menu__item--child">
-                      <div class="sub-menu__item--child-content">
-                        <ul class="sub-menu__item--child-list">
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link  animate__animated animate__headShake">
-                              Trà sen vàng </a>
-                          </li>
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Trà
-                              thạch đào </a>
-                          </li>
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Trà
-                              thanh đào </a>
-                          </li>
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Trà
-                              thạch vải </a>
-                          </li>
-                        </ul>
-                        <div class="sub-menu__item--child-card">
-                          <div class="card-sub-menu">
-                            <div class="card">
-                              <a href="./menuOrder.php "><img src="./home-image/img/tea.jpg" class="card-img-top" alt="..."></a>
-                              <div class="card-body">
-                                <a href="./menuOrder.php ">
-                                  <p class="card-text">Thả ga giải khát với các lại trà<br> 39000đ</p>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="sub-menu__item sub-menu__item-bakery">
-                    <i class="fas fa-caret-right sub-menu__item--icon"></i><a
-                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="./menuOrder.php javascript:;"> Bánh mì </a>
-                    <div class="sub-menu__item--child">
-                      <div class="sub-menu__item--child-content">
-                        <ul class="sub-menu__item--child-list">
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link  animate__animated animate__headShake">
-                              Thịt nướng </a>
-                          </li>
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Xíu
-                              mại</a>
-                          </li>
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Chả
-                              lụa xá xíu </a>
-                          </li>
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Gà
-                              xé nước tương </a>
-                          </li>
-                        </ul>
-                        <div class="sub-menu__item--child-card">
-                          <div class="card-sub-menu">
-                            <div class="card">
-                              <a href="./menuOrder.php "><img src="./home-image/img/bakery.jpg" class="card-img-top" alt="..."></a>
-                              <div class="card-body">
-                                <a href="./menuOrder.php ">
-                                  <p class="card-text">Không lo buổi sáng với bánh mì<br> 29000đ</p>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="sub-menu__item sub-menu__item-order">
-                    <i class="fas fa-caret-right sub-menu__item--icon"></i><a
-                      class="sub-menu__item--link animate__animated animate__fadeInUp" href="./menuOrder.php javascript:;"> Khác</a>
-                    <div class="sub-menu__item--child">
-                      <div class="sub-menu__item--child-content">
-                        <ul class="sub-menu__item--child-list">
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php "
-                              class="sub-menu__item--child-item--link  animate__animated animate__headShake">Bánh
-                              ngọt</a>
-                          </li>
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php "
-                              class="sub-menu__item--child-item--link animate__animated animate__headShake">Marchandise</a>
-                          </li>
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php " class="sub-menu__item--child-item--link animate__animated animate__headShake">Cà
-                              phê đống gói </a>
-                          </li>
-                          <li class="sub-menu__item--child-item">
-                            <i class="fas fa-caret-right sub-menu__item--icon"></i>
-                            <a href="./menuOrder.php "
-                              class="sub-menu__item--child-item--link animate__animated animate__headShake">Thực đơn
-                              giao hàng </a>
-                          </li>
-                        </ul>
-                        <div class="sub-menu__item--child-card">
-                          <div class="card-sub-menu">
-                            <div class="card">
-                              <a href="./menuOrder.php "><img src="./home-image/img/order.jpeg" class="card-img-top" alt="..."></a>
-                              <div class="card-body">
-                                <a href="./menuOrder.php ">
-                                  <p class="card-text">Rất nhiều sản phẩm khác phục vụ khách hàng</p>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
+         <?php
+         }
+                                ?>  
                 </ul>
               </div>
             </li>
