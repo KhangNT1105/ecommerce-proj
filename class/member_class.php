@@ -15,12 +15,12 @@ class Member
         return $result;
     } */
    public function show_member(){
-       $query = "SELECT * FROM tbl_member  ORDER BY id DESC ";
+       $query = "SELECT * FROM users  ORDER BY id DESC ";
        $result = $this -> db ->select($query);
        return $result;
     }
    public function get_member($id){
-       $query = "SELECT * FROM tbl_member WHERE id = '$id'";
+       $query = "SELECT * FROM users WHERE id = '$id'";
        $result = $this -> db ->select($query);
        return $result;
     }
